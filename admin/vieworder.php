@@ -175,6 +175,7 @@ $employee=$_SESSION["name"];
   }
  function add(){
   alert("Hello");
+  alert ("Add More");
   let invno=$("#invnoc").val();
   alert (invno);
  }
