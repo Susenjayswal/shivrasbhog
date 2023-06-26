@@ -1,0 +1,77 @@
+1,Snacks,Chat,Papdi Chat,50,Rs/pt,Available
+2,Snacks,Chat,Samosa Chat,50,Rs/pt,Available
+3,Snacks,Chat,Tikki Chat,50,Rs/pt,Available
+4,Snacks,Chat,Tomato Chat,50,Rs/pt,Available
+5,Snacks,Chinese,Paneer Tikka,150,Rs/pt,Available
+6,Snacks,Chinese,Mushroom Tikka,180,Rs/pt,Available
+7,Snacks,Chinese,Veg Noodels,100,Rs/pt,Available
+8,Snacks,Chinese,Manchurian,150,Rs/pt,Available
+9,Snacks,Chinese,Paneer Noodles,140,Rs/pt,Available
+10,Snacks,Momo,Veg Momos,50,Rs/pt,Available
+11,Snacks,Momo,Soya Momos,60,Rs/pt,Available
+12,Snacks,Momo,Paneer Momos,70,Rs/pt,Available
+13,Snacks,Momo,Veg Fry Momos,70,Rs/pt,Available
+14,Snacks,Momo,Soya Fry Momos,80,Rs/pt,Available
+15,Snacks,Momo,Paneer Fry Momos,90,Rs/pt,Available
+16,Snacks,Nasta,Chola Bhature,60,Rs/pt,Available
+17,Snacks,Nasta,Bihari Nasta,40,Rs/pt,Available
+18,Snacks,Panipuri,Panipuri,20,Rs/pt,Available
+19,Snacks,Panipuri,Dahi PaniPuri,30,Rs/pt,Available
+20,Snacks,Panipuri,Mithi Panipuri,30,Rs/pt,Available
+21,Snacks,Pav Bhaji,Pav Bhaji,60,Rs/pt,Available
+22,Snacks,Pav Bhaji,Pav Bhaji with Extra Butter,80,Rs/pt,Available
+23,Snacks,Pav Bhaji,Pav Bhaji with Extra Pav,80,Rs/pt,Available
+24,Snacks,Snacks,Aloo Samosa,20,Rs/pc,Available
+25,Snacks,Snacks,Dahi Vada,40,Rs/pt,Available
+26,Snacks,Snacks,Hing Kachodi,20,Rs/pc,Available
+27,Snacks,Snacks,Pyaaz Kachodi,20,Rs/pc,Available
+28,Snacks,Snacks,Raj Kachodi,50,Rs/pc,Available
+29,Snacks,Snacks,Sattu Kachodi,20,Rs/pc,Available
+30,Snacks,South Indian,Plain Dosa,100,Rs/pc,Available
+31,Snacks,South Indian,Masala Dosa,120,Rs/pc,Available
+32,Snacks,South Indian,Butter Masala Dosa,140,Rs/pc,Available
+33,Snacks,South Indian,Onion Masala Dosa,140,Rs/pc,Available
+34,Snacks,South Indian,Onion Butter Masala Dosa,150,Rs/pc,Available
+35,Snacks,South Indian,Idli Sambhar,60,Rs/pc,Available
+36,Snacks,South Indian,Sambhar Vada,60,Rs/pc,Available
+37,Snacks,South Indian,Plain Uttapam,50,Rs/pc,Available
+38,Snacks,South Indian,Onion Uttapam,70,Rs/pc,Available
+39,Snacks,South Indian,Onion Tomato,90,Rs/pc,Available
+40,Snacks,South Indian,Paneer Uttapam,100,Rs/pc,Available
+41,Sweets,Halwa,Badam Halwa,500,Rs/kg,Available
+42,Sweets,Halwa,Dry Fruits Halwa,600,Rs/kg,Available
+43,Sweets,Halwa,Gajar Ka Halwa,400,Rs/kg,Available
+44,Sweets,Ladoo,Besan Ghee Ladoo,350,Rs/kg,Available
+45,Sweets,Ladoo,Besan Ladoo,300,Rs/kg,Available
+46,Sweets,Ladoo,Modak,400,Rs/kg,Available
+47,Sweets,Ladoo,Motichur Ghee Ladoo,450,Rs/kg,Available
+48,Sweets,Ladoo,Motichur Ladoo,400,Rs/kg,Available
+49,Sweets,Sweets,Bal Mithai,350,Rs/kg,Available
+50,Sweets,Sweets,Besan Gajak,500,Rs/kg,Available
+51,Sweets,Sweets,Bubble Basket,400,Rs/kg,Available
+52,Sweets,Sweets,Cream Chop,300,Rs/kg,Available
+53,Sweets,Sweets,Ghevar,80,Rs/kg,Available
+54,Sweets,Sweets,Gulab Jamun,20,Rs/pc,Available
+55,Sweets,Sweets,Jalebi,200,Rs/kg,Available
+56,Sweets,Sweets,Kaju Barfi,1000,Rs/kg,Available
+57,Sweets,Sweets,Kaju Gajak,1000,Rs/kg,Available
+58,Sweets,Sweets,Kalakand,500,Rs/kg,Available
+59,Sweets,Sweets,Khaja,200,Rs/kg,Available
+60,Sweets,Sweets,Khapse,300,Rs/kg,Available
+61,Sweets,Sweets,Khurchan,1200,Rs/kg,Available
+62,Sweets,Sweets,Khurma,300,Rs/kg,Available
+63,Sweets,Sweets,Malai Roll,400,Rs/kg,Available
+64,Sweets,Sweets,Papdi,400,Rs/kg,Available
+65,Sweets,Sweets,Parwal Mithai,400,Rs/kg,Available
+66,Sweets,Sweets,Plum Barfi ,400,Rs/kg,Available
+67,Sweets,Sweets,Ras Kadam,400,Rs/kg,Available
+68,Sweets,Sweets,Rasogulla,20,Rs/pc,Available
+69,Sweets,Sweets,Soan Papdi,400,Rs/kg,Available
+70,Rasbhog Special,RasBhog,Rasbhag Banaras wali,100,Rs/cup,Available
+71,Rasbhog Special,RasBhog,Rasbhaog Malai wali,100,Rs/cup,Available
+72,Rasbhog Special,RasBhog,Rasbhog Kesar Paysam,120,Rs/cup,Available
+73,Rasbhog Special,RasBhog,Rasbhog Pan Kulfi,100,Rs/cup,Available
+74,Rasbhog Special,RasBhog,Rasbhog Rasgulle ki,100,Rs/cup,Available
+75,Rasbhog Special,RasBhog,Rasbhog Rasiledar,120,Rs/cup,Available
+76,Rasbhog Special,RasBhog,Rasbhog Rasmadhuri,120,Rs/cup,Available
+77,Rasbhog Special,RasBhog,Rasbhog wali Gulab,80,Rs/cup,Available
