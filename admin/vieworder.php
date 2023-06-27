@@ -24,6 +24,7 @@ $employee=$_SESSION["name"];
      window.print();
      document.body.innerHTML = originalContents;
 }
+
   </script>
   <script src="js/jquery-3-7-0.js"></script>
   </head>
@@ -135,7 +136,10 @@ $employee=$_SESSION["name"];
           <input type="hidden"  id="invnoc" value="<?php echo $invno; ?>">
             
           <button type="button" id="cancel" onclick="cancelorder();">Cancel</button>
-          <button type="button" id="add" onclick="add();"> Add More</button>
+          <input type="text" name="cname" value="<?php echo $cus_name; ?>">
+            <input type="text" name="cmobile" value="<?php echo $cus_mobile; ?>">
+         <button type="button" id="btn1111" onclick="addmore();">Add</button>
+        
         </div>
     </form>
     <br><br>
@@ -173,12 +177,17 @@ $employee=$_SESSION["name"];
   let action="cancelorder";
     window.open('actionorder.php?invno='+invno+'&action='+action,'_parent');
   }
- function add(){
+  function addmore()
+{
   alert("Hello");
-  alert ("Add More");
   let invno=$("#invnoc").val();
-  alert (invno);
- }
+  let cname=$("#cname").val();
+  let mobile=$("#cmobile").val();
+  alert(invno);
+  alert(cname);
+  alert(mobile);
+  //window.open('order.php?invoiceno='+invno+'&cname='+cname+'&mobile'=+mobile,'_parent');
+}
 </script>
   </body>
 </html>

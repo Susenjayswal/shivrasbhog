@@ -99,7 +99,7 @@ if($_SESSION["email"] == "")
                                     <div class="form-group">
                                         <div class="fxt-transformY-50 fxt-transition-delay-1">
 										<label>Quantity</label>
-                                            <input type="text" id="quantity" name="quantity" placeholder="Item quantity" class="form-control lgx-input-form form-control"  />
+                                            <input type="number" id="quantity" name="quantity" min="0" placeholder="Item quantity" class="form-control lgx-input-form form-control"  />
                                         </div> 
                                     </div>									
                                     <div class="form-group">
