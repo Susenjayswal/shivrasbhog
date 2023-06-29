@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="assets/libs/owlcarousel/owl.theme.default.min.css" media="all" />
 
     <!-- GOOGLE FONT -->
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,900%7cRaleway:300,400,400i,500,600,700,900"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/fontcus.css"/>
 
     <link rel="stylesheet" href="assets/libs/animate/animate.css" media="all" />
 

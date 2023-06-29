@@ -86,7 +86,6 @@ if($_SESSION["email"] == "")
                                         <div class="fxt-transformY-50 fxt-transition-delay-1">
 										<label>Product Name</label>
 										<select name="pname" id="pname" class="form-control">
-											
 										</select>
                                         </div>
                                     </div>

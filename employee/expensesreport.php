@@ -12,7 +12,7 @@ $enddate=$_REQUEST["enddate"];
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../admin/css/font.css">
     <title>Rasbhog</title>
     <link rel="shortcut icon" type="image/x-icon" href="../admin/img/favicon.png">
 <script>

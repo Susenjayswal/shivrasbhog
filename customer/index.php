@@ -7,7 +7,7 @@
     <!-- The above 3 meta tags *must* come first in the head -->
 
     <!-- SITE TITLE -->
-    <title>Rasbhog</title>
+    <title>Shiv Rasbhog</title>
     <meta name="description" content="Responsive Rasbhog HTML5 Template"/>
     <meta name="keywords" content="Bootstrap3, restaurant, food, cafe, Template, bakery , Responsive, HTML5"/>
     <meta name="author" content="themearth.com"/>
@@ -87,7 +87,7 @@
                         <div class="col-xs-12">
                             <div class="lgx-banner-info"> <!--lgx-banner-info-center lgx-banner-info-black lgx-banner-info-big lgx-banner-info-bg-->
                                 <h3 class="subtitle"></h3>
-                                <h3 class="subtitle"><span id="lgx-typed-string">RASBHOG</span></h3>
+                                <h3 class="subtitle"><span id="lgx-typed-string">Shiv Rasbhog</span></h3>
                                 <h6 class="title">"THODA MEETHA THODA NAMKIN"</h6>
                                 <p  class="text">
                                     <strong> YOU ALL TO EXPERIENCE VARIETIES OF FLAVOURS IN SWEETS AND SNACKS. ENJOY THE TASTES OF OUR SPECIALS.</strong>
@@ -118,11 +118,11 @@
                     <div class="col-xs-12 col-md-7">
                         <div class="lgx-about-area">
                             <div class="lgx-heading">
-                                <h2 class="heading-title" style="font-style:oblique;">Welcome to Rasbhog ?</h2>
+                                <h2 class="heading-title" style="font-style:oblique;">Welcome to Shiv Rasbhog ?</h2>
                             </div>
                             <div class="lgx-about-content">
                                 <blockquote class="about" >
-                                    <strong><h3 style="font-style:oblique;"><strong> where taste and delight meets!</h3></br>Enjoy a World of Divine Sweets and Irresistible Snacks at <strong style="font-style:oblique;">Rasbhog</strong><br> Discover a Flavour of Paradise Today by Visiting <strong style="font-style:oblique;">Rasbhog,</strong>! Enjoy a Variety of Mouthwatering Snacks and Delicious Sweets to Satisfy Your Cravings.</br> <strong style="font-style:oblique;">Rasbhog,</strong> now the finest selection of snacks and sweets to experience Snacktime Bliss. </br>Enjoy Our Handmade Snacks & Artisan Sweets to Delight Your Taste Buds. Find Your Ideal Snack and Sweet Treats at <strong style="font-style:oblique;">Rasbhog,</strong> the Best Place for Snacks and Sweets. <br>Explore Our Shop's Unique Selection of Snacks and Sweets to Upgrade Your Snacking Experience. Our savoury snacks and irresistibly sweet creations will tantalise your senses. Discover a Wide Variety of Tempting Snacks and Heavenly Sweets at <strong style="font-style:oblique;">Rasbhog,</strong> to Experience the Joy of Snacking.</strong>
+                                    <strong><h3 style="font-style:oblique;"><strong> where taste and delight meets!</h3></br>Enjoy a World of Divine Sweets and Irresistible Snacks at <strong style="font-style:oblique;">Shiv Rasbhog</strong><br> Discover a Flavour of Paradise Today by Visiting <strong style="font-style:oblique;">Shiv Rasbhog,</strong>! Enjoy a Variety of Mouthwatering Snacks and Delicious Sweets to Satisfy Your Cravings.</br> <strong style="font-style:oblique;">Shiv Rasbhog,</strong> now the finest selection of snacks and sweets to experience Snacktime Bliss. </br>Enjoy Our Handmade Snacks & Artisan Sweets to Delight Your Taste Buds. Find Your Ideal Snack and Sweet Treats at <strong style="font-style:oblique;">Shiv Rasbhog,</strong> the Best Place for Snacks and Sweets. <br>Explore Our Shop's Unique Selection of Snacks and Sweets to Upgrade Your Snacking Experience. Our savoury snacks and irresistibly sweet creations will tantalise your senses. Discover a Wide Variety of Tempting Snacks and Heavenly Sweets at <strong style="font-style:oblique;">Shiv Rasbhog,</strong> to Experience the Joy of Snacking.</strong>
                                 </blockquote>
                                 
                             </div>
@@ -228,7 +228,7 @@
                     </div>
                     <div class="col-sm-4">
                         <div class="about-top-single">
-                            <a href="#"><img src=assets/img/gallery/rasbhog.gif alt="about-icon" width="200px" height="200px"></a>
+                            <a href="#"><img src=assets/img/gallery/Shiv Rasbhog.gif alt="about-icon" width="200px" height="200px"></a>
                             <h3 class="title"><a href="#">SPECIALTY</a></h3>
                             <h5 style="font-style:oblique;"><strong>Deliciously Irresistible Sweets for Every Craving</strong></h5>
                         </div>

@@ -568,7 +568,7 @@
         /*=========================================================================
          ===  Typed Animation START
          ========================================================================== */
-        if($('#lgx-typed-string').length){
+        /*if($('#lgx-typed-string').length){
             $('#lgx-typed-string').typed({
                 strings: ["An unit of Shiv Rasbhog","Rasbhog","An unit of Shiv Rasbhog","Rasbhog"],
                 // typing speed
@@ -592,7 +592,7 @@
                 // either html or text
                 contentType: 'html'
             });
-        }
+        }*/
 
         /*=========================================================================
          ===  Typed Animation END
@@ -609,7 +609,7 @@
          ========================================================================== */
 
 
-        if ( $('#map_canvas').length ) {
+        /*if ( $('#map_canvas').length ) {
 
             if (typeof google != 'undefined') {
                 //for Default  map
@@ -648,7 +648,7 @@
                     });
                 }
             }
-        }
+        }*/
 
         /*=========================================================================
          ===  //GOOGLE MAP END

@@ -13,7 +13,7 @@ $employee=$_SESSION["name"];
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/font.css">
     <title>Rasbhog</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
 <script>
@@ -134,12 +134,10 @@ $employee=$_SESSION["name"];
           <input type="submit" name="btnn"  class="btn"  value="Submit">
           <button type="button" id="print" onclick="printDiv();">Print Bill</button>  
           <input type="hidden"  id="invnoc" value="<?php echo $invno; ?>">
-            
           <button type="button" id="cancel" onclick="cancelorder();">Cancel</button>
-          <input type="text" name="cname" value="<?php echo $cus_name; ?>">
-            <input type="text" name="cmobile" value="<?php echo $cus_mobile; ?>">
-         <button type="button" id="btn1111" onclick="addmore();">Add</button>
-        
+          <input type="text" name="cuname" id="cuname" value="<?php echo $cus_name; ?>">
+          <input type="text" name="cumobile" id="cumobile" value="<?php echo $cus_mobile; ?>">
+          <button type="button" id="btn1111" onclick="addmore();">Add</button>
         </div>
     </form>
     <br><br>
@@ -178,16 +176,14 @@ $employee=$_SESSION["name"];
     window.open('actionorder.php?invno='+invno+'&action='+action,'_parent');
   }
   function addmore()
-{
-  alert("Hello");
+  {
+  //alert("Hello");
   let invno=$("#invnoc").val();
-  let cname=$("#cname").val();
-  let mobile=$("#cmobile").val();
-  alert(invno);
-  alert(cname);
-  alert(mobile);
-  //window.open('order.php?invoiceno='+invno+'&cname='+cname+'&mobile'=+mobile,'_parent');
-}
+  let cname=$("#cuname").val();
+  let mobile=$("#cumobile").val();
+ alert(''+mobile);
+  window.open('order.php?invno='+invno+'&name='+cname+'&mobile='+mobile,'_parent');
+  } 
 </script>
   </body>
 </html>

@@ -25,7 +25,7 @@
                     <div align="right" ><strong>&emsp;Date :- <?php
 date_default_timezone_set("Asia/Calcutta");   //India time (GMT+5:30)
 echo date('d-m-Y');
-?></strong>&emsp;&emsp;&emsp;&ensp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+?></strong>&emsp;&emsp;&emsp;
 <span><strong>Time :- <?php echo date('H:i');?></strong></span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</div>
                         <ul class="nav navbar-nav lgx-nav">
                             <li><a class="lgx-scroll active" href="index.php">Home</a></li>  

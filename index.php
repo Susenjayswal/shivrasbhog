@@ -15,15 +15,12 @@
 	<!-- Flaticon CSS -->
 	<link rel="stylesheet" href="admin/font/flaticon.css">
 	<!-- Google Web Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap" rel="stylesheet">
+	<link href="../admin/css/fontswap.css" rel="stylesheet">
 	<!-- Custom CSS -->
 	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-	<!--[if lt IE 8]>
-        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
     <div id="preloader" class="preloader">
         <div class='inner'>
             <div class='line1'></div>

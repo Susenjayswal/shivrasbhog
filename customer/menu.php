@@ -10,7 +10,7 @@
     <!-- The above 3 meta tags *must* come first in the head -->
 
     <!-- SITE TITLE -->
-    <title>Rasbhog</title>
+    <title>Shiv Rasbhog</title>
     <meta name="description" content="Responsive Rasbhog HTML5 Template"/>
     <meta name="keywords" content="Bootstrap3, restaurant, food, cafe, Template, bakery , Responsive, HTML5"/>
     <meta name="author" content="themearth.com"/>
