@@ -1,5 +1,5 @@
 //   all ------------------
-function initRestabook() {
+function initrasbhog() {
     "use strict";
     //   loader ------------------
     firstLoad();
@@ -877,6 +877,6 @@ document.addEventListener('gesturestart', function (e) {
 });  
 //   Init All ------------------
 $(document).ready(function () {
-    initRestabook();
+    initrasbhog();
     initparallax();
 });
