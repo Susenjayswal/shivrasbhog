@@ -39,7 +39,7 @@ if($_REQUEST["action"] == "cancelorder")
     while($d=mysqli_fetch_object($rs))
     {
         $item .= ",".$d->itname;
-        $amount=($amount+$d->price);
+        $amount=($amount+($d->price*$d->quantity));
     }   
     mysqli_query($con,"insert into cancel(itname,totalamount,date,invno) values('$item','$amount',CURDATE(),'$invno')");
     updateinvoiceno($invno);

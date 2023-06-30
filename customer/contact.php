@@ -60,15 +60,58 @@
     <link rel="manifest" href="assets/img/favicon/manifest.json">
 
     <?php include ('include/css.php');?>
+    <style>
+        .column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+    </style>
 </head>
 <body class="page page-template");">
 <div class="lgx-container ">
 <?php include ('include/header.php'); ?>
+<table width="1200" align="Center" border="0px" style="border-collapse:collapse; border-spacing:0px;">
+    <caption><h2 align="center" style="font-style:oblique;"><strong>Shiv Rasbhog</strong></h2><br><br>
+    <div class="row" align="center"><div class="column"><img src="assets/img/franchise.jpg"></div>
+    <div class="column"><img src="assets/img/franchise2.jpg"></div>
+    <div class="column"><img src="assets/img/franchise3.jpg"></div>
+    </div>
+</caption>
+    <tr><td align="justify">    <strong>
+We extend an exciting opportunity to you to become a franchise partner of our renowned snacks and sweets outlet, Shiv Rasbhog. As a recently established company, we are looking for a partner to help us produce mouthwatering tasty treats and top-notch customer service. We think that your entrepreneurial energy and commitment would make you the perfect partner in growing our company.<br><br>
+Shiv Rasbhog is an establishment that specialises in providing a wide selection of sweets and snacks to suit a variety of tastes. We provide a wide range of delectable selections on our menu, including freshly made appetisers and, exquisite sweets. We've managed to carve out a significant place for ourselves in the market as a result to our dedication to quality, innovation, and client happiness.<br><br>
+You will gain as a franchise partner from:<br><br>
+
+<strong style="font-style:oblique;">Established Brand:</strong> Partnering with an established brand in the snacks and sweets sector will give you a competitive advantage and immediate market recognition.<br><br>
+
+<strong style="font-style:oblique;">Proven Business Model:</strong> We have created a solid business plan that has been effectively used across all of our current channels. To ensure the successful operation of your franchise, you will receive thorough training and ongoing assistance.<br><br>
+
+<strong style="font-style:oblique;">Support for marketing and advertising:</strong> To encourage consumer engagement and boost foot traffic, our committed marketing staff will work with you to develop effective marketing campaigns and promotional initiatives.<br><br>
+
+<strong style="font-style:oblique;">Purchasing and Supply Chain Management:</strong> To ensure a steady supply of high-quality ingredients and materials, take use of our established network of suppliers and efficient procurement procedures.<br><br></strong>
+
+<strong style="font-style:oblique;">Operating Guidance: To ensure effective day-to-day operations, including employee training, inventory management, and customer support, we will give you thorough operating manuals and guidelines.<br><br></strong>
+
+<strong style="font-style:oblique;">Please get in touch with us as soon as possible if you're interested in acquiring more about this amazing franchise opportunity. We may arrange a meeting to go through the specifics, financial needs, and suitable sites for starting an outlet.</strong>
+<br><br><br>
+
+<strong>
+Feel free to get in touch with us if you want to know more about us, and fill out the form below if you want to meet us.<br>Mobile No. :-<br>Email Id &emsp;&nbsp;:-
+</strong>
+</td></tr></table>
 <div class="lgx-footer-single">
-                        <h1 class="title" align="center"><strong>Contact Us </strong></h1>
+                        <h1 align="center"><strong>Contact Us </strong></h1>
                         <div class="lgx-subscriber-area">
                             <div class="lgx-subscriber">
-                                <form  name="frm"  method="POST" action="../admin/actionemployee.php" >
+                                <form  name="frm"  method="POST" action="actioncontact.php" >
                                     <div class="form-group">
                                         <label> Enter Your Name </label>
                                         <input type="name" id="name" name="name" placeholder="Name" class="form-control lgx-input-form form-control"  required="required"/>

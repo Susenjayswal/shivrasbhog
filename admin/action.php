@@ -73,16 +73,7 @@ if($_POST["action"]== "login")
     }
 }
 
-// Customer's Feedback
 
-if($_POST["action"]== "feedback")
-{
-    extract($_POST);
-
-        mysqli_query($con,"insert into feedback(name,email,feedback) values('$name','$email','$feedback')");
-        $msg="Your Feedback is successfully submitted";
-        echo "<script>top.window.location.href='../customer/index.php?msg=$msg'</script>";
-}
 
 // Menu Upload in database
 
@@ -133,4 +124,5 @@ echo "<script>top.window.location.href='uploadmenu.php?msg=$msg'</script>";
 }
 }
 }
+
 ?>

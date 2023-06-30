@@ -46,7 +46,7 @@
                         <h2 class="title">Feedback</h2>
                         <div class="lgx-subscriber-area">
                             <div class="lgx-subscriber">
-                                <form  name="frm"  method="POST" action="../admin/action.php" >
+                                <form  name="frm"  method="POST" action="actioncontact.php" >
                                     <div class="form-group">
                                         <input type="name" id="name" name="name" placeholder="Name" class="form-control lgx-input-form form-control"  required="required"/>
                                         <input type="hidden" id="action" name="action" value="feedback">

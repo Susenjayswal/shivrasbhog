@@ -14,11 +14,6 @@ if($_POST["action"]== "stock")
        
         if ($price != null ) 
         {
-            //$total=0;
-            //$pdf=$_FILES["pdf"];
-            //$filename=$_FILES["pdf"]["name"];
-            //$filepath=$_FILES["pdf"]["tmp_name"];
-            //move_uploaded_file($filepath,'pdf/'.$filename);
             mysqli_query($con,"insert into stock(name,invono,rate,type,quantity,price,date) values('$name','$invono','$rate','$type','$quantity','$price','$date')");
             $msg="Stock Inserted Succefully";
             echo "<script>top.window.location.href='../employee/staff.php?msg=$msg&invono=$invono'</script>";  
@@ -47,4 +42,6 @@ if($_POST["action"]== "expenses"){
             $msg="Expenses Inserted Succefully";
             echo "<script>top.window.location.href='../employee/staff.php?msg=$msg&name=$name&price=$price'</script>";
 }
+
+
 ?>
