@@ -228,7 +228,7 @@
                     </div>
                     <div class="col-sm-4">
                         <div class="about-top-single">
-                            <a href="#"><img src=assets/img/gallery/Shiv Rasbhog.gif alt="about-icon" width="200px" height="200px"></a>
+                            <a href="#"><img src=assets/img/gallery/Rasbhog.gif alt="about-icon" width="200px" height="200px"></a>
                             <h3 class="title"><a href="#">SPECIALTY</a></h3>
                             <h5 style="font-style:oblique;"><strong>Deliciously Irresistible Sweets for Every Craving</strong></h5>
                         </div>
