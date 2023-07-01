@@ -1,5 +1,6 @@
 <!-- JQUERY  -->
-<script data-cfasync="false" src="../../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+<script data-cfasync="false" src="../../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+<script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
 
 <!-- BOOTSTRAP JS  -->
 <script src="assets/libs/bootstrap/js/bootstrap.min.js"></script>
@@ -42,8 +43,7 @@
 
 <!-- CUSTOM SCRIPT  -->
 <script src="assets/js/custom.script.js"></script>
-
+<script src="assets/libs/datetime.js"></script>
 <!--<div class="lgx-switcher-loader"></div>
  For Demo Purpose Only// Remove From Live
 <script src="switcher/js/switcherd41d.js?"></script>-->
-

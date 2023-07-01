@@ -1,5 +1,5 @@
 <?php
- require_once("../admin/connect.php");
+require_once("../admin/connect.php");
 ?>
 <!doctype html>
 <html class="no-js" lang="en">
@@ -59,11 +59,11 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
     <link rel="manifest" href="assets/img/favicon/manifest.json">
 
-    <?php include ('include/css.php');?>
+    <?php include('include/css.php'); ?>
 </head>
 <body class="page page-template" style="background-image: linear-gradient(to bottom,peru,MediumTurquoise,LightSalmon,peru,MediumTurquoise,LightSalmon);">
 <div class="lgx-container ">
-<?php include ('include/header.php'); ?>
+<?php include('include/header.php'); ?>
 <main>
     <div class="lgx-page-wrapper" action="action.php" method="post">
         <div class="container">
@@ -85,24 +85,24 @@
                             </tr>
 </div>
                             <?php
-              $sr=0;
-              //$totalprice=0; 
-              $rs=mysqli_query($con,"select *from menu where type='SNACKS' and available='AVAILABLE'");
-              while($d=mysqli_fetch_object($rs)){
-              $sr++;
-            ?>
-           <tr align="center">
-            <td width="100px"><?php echo $sr;?></td>
-            <td align="center" width="200px">&nbsp;<strong><?php echo $d->subtype; ?></strong>&nbsp;</td>
-            <td align="left" style="font-style:oblique;" width="400px"><strong>&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $d->name; ?>&nbsp;</strong></td>
-            <td width="150px"><strong><?php echo $d->price; ?>&nbsp;<?php echo ($d->ratetype);?></strong></td>
-            <!--<td width="150px"><strong><?php //echo $d->available; ?></strong></td>-->
-            <td width="150px"><a href="../admin/guestcustomer.php"><strong>Order Now</strong></a></td>
+                            $sr = 0;
+                            //$totalprice=0; 
+                            $rs = mysqli_query($con, "select *from menu where type='SNACKS' and available='AVAILABLE'");
+                            while ($d = mysqli_fetch_object($rs)) {
+                              $sr++;
+                              ?>
+             <tr align="center">
+              <td width="100px"><?php echo $sr; ?></td>
+              <td align="center" width="200px">&nbsp;<strong><?php echo $d->subtype; ?></strong>&nbsp;</td>
+              <td align="left" style="font-style:oblique;" width="400px"><strong>&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $d->name; ?>&nbsp;</strong></td>
+              <td width="150px"><strong><?php echo $d->price; ?>&nbsp;<?php echo ($d->ratetype); ?></strong></td>
+              <!--<td width="150px"><strong><?php //echo $d->available; ?></strong></td>-->
+              <td width="150px"><a href="../admin/guestcustomer.php"><strong>Order Now</strong></a></td>
               
-          </tr>
-            <?php
-              }
-            ?>
+            </tr>
+              <?php
+                            }
+                            ?>
           <tr>
                         </table>
             </div>
@@ -120,23 +120,23 @@
                                 <td><strong>Order</strong></td>
                             </tr>
                             <?php
-              $sr=0;
-              //$totalprice=0; 
-              $rs=mysqli_query($con,"select *from menu where type='SWEETS' and available='AVAILABLE'");
-              while($d=mysqli_fetch_object($rs)){
-              $sr++;
-            ?>
-          <tr align="center">
-            <td width="100px"><?php echo $sr;?></td>
-            <td align="center" width="200px">&nbsp;<strong><?php echo $d->subtype; ?></strong>&nbsp;</td>
-            <td align="left" style="font-style:oblique;" width="400px"><strong>&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $d->name; ?>&nbsp;</strong></td>
-            <td width="150px"><strong><?php echo $d->price; ?>&nbsp;<?php echo ($d->ratetype);?></strong></td>
-            <!--<td width="150px"><strong<?php //echo $d->available; ?></strong></td>-->
-            <td width="150px"><a href="../admin/customer.php"><strong>Order Now</strong></a></td>
-            </tr>
-            <?php
-              }
-            ?>
+                            $sr = 0;
+                            //$totalprice=0; 
+                            $rs = mysqli_query($con, "select *from menu where type='SWEETS' and available='AVAILABLE'");
+                            while ($d = mysqli_fetch_object($rs)) {
+                              $sr++;
+                              ?>
+            <tr align="center">
+              <td width="100px"><?php echo $sr; ?></td>
+              <td align="center" width="200px">&nbsp;<strong><?php echo $d->subtype; ?></strong>&nbsp;</td>
+              <td align="left" style="font-style:oblique;" width="400px"><strong>&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $d->name; ?>&nbsp;</strong></td>
+              <td width="150px"><strong><?php echo $d->price; ?>&nbsp;<?php echo ($d->ratetype); ?></strong></td>
+              <!--<td width="150px"><strong<?php //echo $d->available; ?></strong></td>-->
+              <td width="150px"><a href="../admin/customer.php"><strong>Order Now</strong></a></td>
+              </tr>
+              <?php
+                            }
+                            ?>
             </table>
             </div>   
             <!-- Rasbhog's Special Item-->    
@@ -151,22 +151,22 @@
                     <td><strong>Order</strong></td>
                 </tr>
                 <?php
-                $sr=0;
-               
-              $rs=mysqli_query($con,"select *from menu where type='RASBHOG SPECIAL' and available='AVAILABLE'");
-              while($d=mysqli_fetch_object($rs)){
-              $sr++;
-            ?>
-          <tr align="center">
-            <td width="100px"><?php echo $sr;?></td>
-            <td align="center" width="200px">&nbsp;<strong><?php echo $d->subtype; ?></strong>&nbsp;</td>
-            <td align="left" style="font-style:oblique;" width="400px"><strong>&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $d->name; ?>&nbsp;</strong></td>
-            <td width="150px"><strong><?php echo $d->price; ?>&nbsp;<?php echo ($d->ratetype);?></strong></td>
-            <!--<td width="150px"><strong><?php //echo $d->available; ?></strong></td>-->
-            <td width="150px"><a href="../admin/customer.php"><strong>Order Now</strong></a></td>
-          </tr>
-            <?php
-              }
+                $sr = 0;
+
+                $rs = mysqli_query($con, "select *from menu where type='RASBHOG SPECIAL' and available='AVAILABLE'");
+                while ($d = mysqli_fetch_object($rs)) {
+                  $sr++;
+                  ?>
+            <tr align="center">
+              <td width="100px"><?php echo $sr; ?></td>
+              <td align="center" width="200px">&nbsp;<strong><?php echo $d->subtype; ?></strong>&nbsp;</td>
+              <td align="left" style="font-style:oblique;" width="400px"><strong>&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $d->name; ?>&nbsp;</strong></td>
+              <td width="150px"><strong><?php echo $d->price; ?>&nbsp;<?php echo ($d->ratetype); ?></strong></td>
+              <!--<td width="150px"><strong><?php //echo $d->available; ?></strong></td>-->
+              <td width="150px"><a href="../admin/customer.php"><strong>Order Now</strong></a></td>
+            </tr>
+              <?php
+                }
                 ?>
           <tr>
                         </table>

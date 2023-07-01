@@ -1,9 +1,8 @@
 <?php
 session_start();
 require_once('../admin/connect.php');
-if($_SESSION["email"] == "")
-{
-    echo "<script>top.window.location.href='../index.php';</script>";
+if ($_SESSION["email"] == "") {
+	echo "<script>top.window.location.href='../index.php';</script>";
 }
 ?>
 <!doctype html>
@@ -33,15 +32,15 @@ if($_SESSION["email"] == "")
 
 <body>
 	<!--[if lt IE 8]>
-        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-    <div id="preloader" class="preloader">
-        <div class='inner'>
-            <div class='line1'></div>
-            <div class='line2'></div>
-            <div class='line3'></div>
-        </div>
-    </div>
+		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
+	<div id="preloader" class="preloader">
+		<div class='inner'>
+			<div class='line1'></div>
+			<div class='line2'></div>
+			<div class='line3'></div>
+		</div>
+	</div>
 	<section class="fxt-template-animation fxt-template-layout21">
 		<!-- Animation Start Here -->
 		<div id="particles-js"></div>
@@ -53,35 +52,41 @@ if($_SESSION["email"] == "")
 						<div class="fxt-header">
 							<a href="admin.php" class="fxt-logo"><img src="../admin/img/logo.png" alt="Logo"></a>
 							<h2>Rasbhog</h2>
-							<h6><strong>Hi! <?php echo $_SESSION["name"];?></strong></h6>
+							<h6><strong>Hi!
+									<?php echo $_SESSION["name"]; ?>
+								</strong></h6>
 						</div>
 						<div class="fxt-form">
-							
 
-<div class=stock>
-	<h2 align="center">Stock Report </h2>
-<form class="fxt-form" method="post">
-	<div class="form-group">
-		<label> Enter Start Date &nbsp;&nbsp;&nbsp;&nbsp;</label>
-	<input type="date" id="stadate" name="stadate" placeholder="Enter Start Date" class="form-control">
-	</div>
-	<div class="form-group">
-	<label> Enter End Date   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-	<input type="date" id="enddate" name="enddate" placeholder="Enter End Date" class="form-control">
-	</div>
-	<div class="form-group">
-		<input type="button" name="btnsubmit4" id="btnsubmit4" value="Submit" class="fxt-btn-fill">
-		</div>	
-</form>
-</div>
 
-<button type="submit" class="fxt-btn-fill"><a class="lgx-scroll" href="../admin/logout.php">Logout</a></button>
-</div>
-							</form>
+							<div class=stock>
+								<h2 align="center">Stock Report </h2>
+								<form class="fxt-form" method="post">
+									<div class="form-group">
+										<label> Enter Start Date &nbsp;&nbsp;&nbsp;&nbsp;</label>
+										<input type="date" id="stadate" name="stadate" placeholder="Enter Start Date"
+											class="form-control">
+									</div>
+									<div class="form-group">
+										<label> Enter End Date &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+										<input type="date" id="enddate" name="enddate" placeholder="Enter End Date"
+											class="form-control">
+									</div>
+									<div class="form-group">
+										<input type="button" name="btnsubmit4" id="btnsubmit4" value="Submit"
+											class="fxt-btn-fill">
+									</div>
+								</form>
+							</div>
+
+							<button type="submit" class="fxt-btn-fill"><a class="lgx-scroll"
+									href="../admin/logout.php">Logout</a></button>
 						</div>
+						</form>
 					</div>
 				</div>
 			</div>
+		</div>
 		</div>
 	</section>
 	<!-- jquery-->
@@ -97,13 +102,14 @@ if($_SESSION["email"] == "")
 	<script src="../admin/js/validator.min.js"></script>
 	<!-- Custom Js -->
 	<script src="../admin/js/main.js"></script>
-<script>
-	$("#btnsubmit4").on('click',function(){
-			let stadate=$("#stadate").val();
-			let enddate=$("#enddate").val();
-			window.open('stockreport.php?stadate='+stadate+'&enddate='+enddate,'_parent');
+	<script>
+		$("#btnsubmit4").on('click', function () {
+			let stadate = $("#stadate").val();
+			let enddate = $("#enddate").val();
+			window.open('stockreport.php?stadate=' + stadate + '&enddate=' + enddate, '_parent');
 
-	});
-</script>
+		});
+	</script>
 </body>
+
 </html>

@@ -1,9 +1,8 @@
 <?php
 session_start();
 require_once('../admin/connect.php');
-if($_SESSION["email"] == "")
-{
-    echo "<script>top.window.location.href='../index.php';</script>";
+if ($_SESSION["email"] == "") {
+	echo "<script>top.window.location.href='../index.php';</script>";
 }
 ?>
 <!doctype html>
@@ -33,15 +32,15 @@ if($_SESSION["email"] == "")
 
 <body>
 	<!--[if lt IE 8]>
-        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-    <div id="preloader" class="preloader">
-        <div class='inner'>
-            <div class='line1'></div>
-            <div class='line2'></div>
-            <div class='line3'></div>
-        </div>
-    </div>
+		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
+	<div id="preloader" class="preloader">
+		<div class='inner'>
+			<div class='line1'></div>
+			<div class='line2'></div>
+			<div class='line3'></div>
+		</div>
+	</div>
 	<section class="fxt-template-animation fxt-template-layout21">
 		<!-- Animation Start Here -->
 		<div id="particles-js"></div>
@@ -53,26 +52,31 @@ if($_SESSION["email"] == "")
 						<div class="fxt-header">
 							<a href="staff.php" class="fxt-logo"><img src="../admin/img/logo.png" alt="Logo"></a>
 							<h2>Rasbhog</h2>
-                            <h6><strong>Hi! <?php echo $_SESSION["name"];?></strong></h6>
-                            <p><strong>Expenses Entry</strong></p>
+							<h6><strong>Hi!
+									<?php echo $_SESSION["name"]; ?>
+								</strong></h6>
+							<p><strong>Expenses Entry</strong></p>
 						</div>
 						<div class="fxt-form">
-							<form method="POST" action="../admin/actionemployee.php" >
+							<form method="POST" action="../admin/actionemployee.php">
 								<div class="form-group">
 									<div class="fxt-transformY-50 fxt-transition-delay-1">
-										<input type="text" id="name" class="form-control" name="name" placeholder="Item Name" required="required">
+										<input type="text" id="name" class="form-control" name="name"
+											placeholder="Item Name" required="required">
 										<input type="hidden" id="action" name="action" value="expenses">
 									</div>
 								</div>
-                                <div class="form-group">
-									<div class="fxt-transformY-50 fxt-transition-delay-1">
-										<input type="number" id="price" class="form-control" name="price" placeholder="Expenses Amount">
-									</div>
-								</div>
-								
 								<div class="form-group">
 									<div class="fxt-transformY-50 fxt-transition-delay-1">
-										<input type="date" id="date" class="form-control" name="date" placeholder="Item Rate" required="required">
+										<input type="number" id="price" class="form-control" name="price"
+											placeholder="Expenses Amount">
+									</div>
+								</div>
+
+								<div class="form-group">
+									<div class="fxt-transformY-50 fxt-transition-delay-1">
+										<input type="date" id="date" class="form-control" name="date"
+											placeholder="Item Rate" required="required">
 									</div>
 								</div>
 								<!--<div class="form-group">
@@ -85,30 +89,33 @@ if($_SESSION["email"] == "")
 										<input type="number" id="price" class="form-control" name="price" placeholder="Price">
 									</div>
 								</div>-->
-								
-								
-								
+
+
+
 								<div class="form-group">
 									<div class="fxt-transformY-50 fxt-transition-delay-4">
-																		
-                                    <button type="submit" name="btn2"  id='btn2' class="fxt-btn-fill">Submit</button>
+
+										<button type="submit" name="btn2" id='btn2' class="fxt-btn-fill">Submit</button>
 									</div>
 								</div>
-                                <div class="form-group">
+								<div class="form-group">
 									<div class="fxt-transformY-50 fxt-transition-delay-4">
-										<button type="submit" class="fxt-btn-fill" onclick="window.open('staff.php','_parent');">Home</button>
+										<button type="submit" class="fxt-btn-fill"
+											onclick="window.open('staff.php','_parent');">Home</button>
 									</div>
 								</div>
-                                <div class="form-group">
+								<div class="form-group">
 									<div class="fxt-transformY-50 fxt-transition-delay-4">
-                                <button type="submit" onclick="window.open('../admin/logout.php','_parent');" class="fxt-btn-fill" >Logout</button>
-                            </div></div>
-</div>
-							</form>
+										<button type="submit" onclick="window.open('../admin/logout.php','_parent');"
+											class="fxt-btn-fill">Logout</button>
+									</div>
+								</div>
 						</div>
+						</form>
 					</div>
 				</div>
 			</div>
+		</div>
 		</div>
 	</section>
 	<!-- jquery-->
@@ -126,4 +133,5 @@ if($_SESSION["email"] == "")
 	<script src="../admin/js/main.js"></script>
 
 </body>
+
 </html>

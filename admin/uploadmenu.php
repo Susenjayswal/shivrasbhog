@@ -1,14 +1,14 @@
 <?php
 session_start();
 require_once("function.php");
-if($_SESSION["email"] == "")
-{
-    echo "<script>top.window.location.href='../index.php';</script>";
+if ($_SESSION["email"] == "") {
+	echo "<script>top.window.location.href='../index.php';</script>";
 }
 ?>
 <html>
-    <head>
-    <meta charset="utf-8">
+
+<head>
+	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<title>Rasbhog</title>
 	<meta name="description" content="">
@@ -16,11 +16,13 @@ if($_SESSION["email"] == "")
 	<!-- Favicon -->
 	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
 	<!-- Bootstrap CSS -->
-	<?php include('include/css.php');?>
-    </head>
+	<?php include('include/css.php'); ?>
+</head>
+
 </html>
+
 <body>
-<section class="fxt-template-animation fxt-template-layout21">
+	<section class="fxt-template-animation fxt-template-layout21">
 		<!-- Animation Start Here -->
 		<div id="particles-js"></div>
 		<!-- Animation End Here -->
@@ -30,36 +32,42 @@ if($_SESSION["email"] == "")
 					<div class="fxt-content">
 						<div class="fxt-header">
 							<a href="../employee/staff.php" class="fxt-logo"><img src="img/logo.png" alt="Logo"></a>
-							<h6><strong>Hi! <?php echo $_SESSION["name"];?></strong></h6>
-							<h2><strong?>Upload Menu</strong></h2>
+							<h6><strong>Hi!
+									<?php echo $_SESSION["name"]; ?>
+								</strong></h6>
+							<h2>
+								<strong?>Upload Menu</strong>
+							</h2>
 						</div>
 						<div class="fxt-form">
-    <form enctype='multipart/form-data' action='action.php' method='post'>
-            
-    <label>Upload Rasbhog's Menu</label>
-    <div class="form-group">
-									<div class="fxt-transformY-50 fxt-transition-delay-1">
-    <input  type='file' name="file" class="form-control">
-</div></div>
-<div class="form-group">
-									<div class="fxt-transformY-50 fxt-transition-delay-1">
-    <input type="hidden" id="action" name="action" value="upload">
-</div>
-</div>
-<div class="form-group">
-									<div class="fxt-transformY-50 fxt-transition-delay-1">
-    <input type='submit' name='submit' value='Upload Products' class="fxt-btn-fill">
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+							<form enctype='multipart/form-data' action='action.php' method='post'>
 
-    </form>
-    </section>
-	<?php include('include/script.php');?>
+								<label>Upload Rasbhog's Menu</label>
+								<div class="form-group">
+									<div class="fxt-transformY-50 fxt-transition-delay-1">
+										<input type='file' name="file" class="form-control">
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="fxt-transformY-50 fxt-transition-delay-1">
+										<input type="hidden" id="action" name="action" value="upload">
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="fxt-transformY-50 fxt-transition-delay-1">
+										<input type='submit' name='submit' value='Upload Products' class="fxt-btn-fill">
+									</div>
+								</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+
+		</form>
+	</section>
+	<?php include('include/script.php'); ?>
 </body>
+
 </html>

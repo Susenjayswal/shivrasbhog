@@ -10,13 +10,24 @@ $cus_mobile=$_REQUEST["mobile"];
 $invno=$_REQUEST["invno"];
 $employee=$_SESSION["name"];
 ?>
-<!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" href="css/font.css">
-    <title>Rasbhog</title>
+<!doctype html><html class="no-js" lang="zxx">
+<!-- Mirrored from themeholy.com/html/invar/demo/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 30 Jun 2023 15:37:30 GMT -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Shiv Rasbhog</title>
+  
+    <meta name="keywords" content="Shiv Rasbhog">
+    <meta name="robots" content="INDEX,FOLLOW">
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
-<script>
+    <link rel="manifest" href="assets/img/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/app.min.css"><link rel="stylesheet" href="assets/css/style.css">
+    <script>
   function printDiv() {
      var printContents = document.getElementById("printbill").innerHTML;
      var originalContents = document.body.innerHTML;
@@ -26,63 +37,100 @@ $employee=$_SESSION["name"];
 }
 
   </script>
-  <script src="js/jquery-3-7-0.js"></script>
-  </head>
-  <body style="background-color:#FFF8DC">
-  <div id="printbill">  
-  <form action="actionorder.php" method="post" class = "form-group">
-        <table  border="1" cellspacing="0"  align="center" style="border-collapse:collapse; border-spacing:0px;">
-          <tr>
-            <td align="center" rowspan="2"><img src="../customer/assets/img/favicon.png"></td>
-            <td colspan="2" rowspan="2"><div align="center" style="font-style:oblique;"><strong>RASBHOG</strong></br>A unit of Shiv Rasbhog LLP</div></td>
-            <td colspan="2"><div><strong>Lic No. </strong></div> 
+</head>
+<body>
+<div id="printbill">
+<form action="actionorder.php" method="post" class = "form-group">
             <input type="hidden" name="name" value="<?php echo $cus_name; ?>">
             <input type="hidden" name="mobile" value="<?php echo $cus_mobile; ?>">
             <input type="hidden" name="invno" value="<?php echo $invno; ?>">
             <input type="hidden" name="employee" value="<?php echo $employee; ?>">
-            <input type="hidden" name="action" value="saveinvoice"> 
-          </tr>
-          <tr>
-            
-            <td colspan="2" rowspan="1"><strong>Patna City, Patna</br>Bihar 800009</strong></td>
-          </tr>
-          <tr>
-            <td ><strong>Name &nbsp;&nbsp;</strong></td>
-            <td colspan = "4">&nbsp;&nbsp; <?php echo strtoupper($cus_name); ?></td>
-          </tr>
-          <tr> 
-            <td > <strong>Mobile</strong></td>
-            <td colspan="2">&nbsp;&nbsp; <?php echo $cus_mobile; ?></td>
-            <td><strong> Payment Type </strong></td>                    
-            <td>
-              <select id="paytype" name="paytype" class="form-control" required='required' style="background-color:#FFF8DC">
-								<option value=""> --</option>
-								<option value="cash"> Cash</option>
-								<option value="online">Online</option>
-								<option value="card"> Card</option>
-							</select>
-            </td>
-          </tr>
-          <tr>
-            <td><strong>Date</strong></td>
-            <td colspan="2">&nbsp;&nbsp;
-              <?php
-                $t=time();
-                echo(date("d-m-y",$t));
-              ?>
-            </td>
-            <td ><label><strong>Invoice No.</strong></label></td>
-            <td align="center"><?php echo $invno; ?></td>
-          </tr> 
-               
-          <tr align="center" style="background-color:lightblue;">
-            <td><Strong>S. No.</strong></td>
-            <td><Strong>Name</strong></td>
-            <td><Strong>Price</strong></td> 
-            <td><Strong>Quantity</strong></td>
-            <td><Strong>Item Price</strong></td>
-          </tr>
-            <?php
+            <input type="hidden" name="action" value="save_invoice">
+    <div class="invoice-container-wrap">
+        <div class="invoice-container">
+            <main>
+                <div class="themeholy-invoice invoice_style11">
+                    <div class="download-inner" id="download_section">
+                        <header class="themeholy-header header-layout8">
+                            <div class="row align-items-center justify-content-between">
+                                <div class="col-auto">
+                                    <div class="header-logo">
+                                        <a href="staff.php"><img src="../customer/assets/img/logo.jpg" alt="Shiv Rasbhog"></a>
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <h1 class="big-title">Invoice</h1>
+                                </div>
+                            </div>
+                            <div class="header-bottom">
+                                <div class="row align-items-center justify-content-between">
+                                    <div class="col-auto">
+                                        <p class="invoice-number me-4"><b>Invoice No: </b><?php echo $invno;?></p>
+                                        <div class="shape-left">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <p class="invoice-date"><b>Date: </b>
+                                        <?php
+                                            $t=time();
+                                             echo(date("d-m-y",$t));
+                                            ?>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </header>
+                        <div class="row justify-content-between my-4">
+                            <div class="col-auto"><div class="invoice-left">
+                                <b>Invoice To:</b><address><?php echo $cus_name; ?><br><?php echo $cus_mobile; ?></address>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="invoice-right"><b>Shiv Rasbhog:</b>
+                                <address>Chowk Shikar Pur, Patna City,<br> Patna, Bihar 800009<br>shivrashbhog23@gmail.com<br>+91 7979084161</address>
+                            </div>
+                        </div>
+                    </div>
+                    <!--<p class="table-title"><b>Patient Information:</b></p>
+                    <table class="invoice-table table-style3">
+                        <tbody>
+                            <tr>
+                                <th>Patiend Name:</th>
+                                <td>Alex Farnandes</td>
+                                <th>Patient ID:</th>
+                                <td>123456789</td>
+                            </tr>
+                            <tr>
+                                <th>Patient Age:</th>
+                                <td>35 Years</td>
+                                <th>Service:</th>
+                                <td>Blood Test</td>
+                            </tr>
+                            <tr>
+                                <th>Due Date:</th>
+                                <td>27/07/2022</td>
+                                <th>Insurence Billed:</th>
+                                <td>WPS</td>
+                            </tr>
+                            <tr>
+                                <th>Address:</th>
+                                <td colspan="3">4 Balmy Beach Road, Owen Sound, Ontario, Canada</td>
+                            </tr>
+                        </tbody>
+                    </table>-->
+                    <table class="invoice-table table-stripe3">
+                        <thead>
+                            <tr>
+                                <th>Sr. No.</th>
+                                <th>Name</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        <?php
               $sr=0;
               $totalprice=0; 
               $rs=mysqli_query($con,"select *from cus_order where invno='$invno'");
@@ -106,37 +154,50 @@ $employee=$_SESSION["name"];
               }
               $net=$totalprice+($totalprice*2.5)/100+($totalprice*2.5)/100;
             ?>
-          <tr>
-            <td colspan="2 "rowspan="4"></td>
-            <td align="center" colspan="2" style="background-color:lightgrey;"><strong>Total Amount</strong></td>
-            <td align="center"><?php echo $totalprice;?></td>
-          </tr>
-          <tr>
-            <td><strong>CGST</strong></td>
-            <td><strong>2.5%</strong></td>
-            <td align="center"><?php echo round(($totalprice*2.5)/100,2);?></td>
-          </tr>
-          <tr>
-            <td><strong>SGST</strong></td>
-            <td><strong>2.5%</strong></td>
-            <td align="center"><?php echo round(($totalprice*2.5)/100,2);?></td>
-            </tr>
-          <tr>
-            <td align="center" colspan="2" style="background-color:lightgrey;"> <strong>Net Amount</strong></td>
-            <td align="center" ><?php echo round($net);?></td>
-          </tr>
-            <tr>
-            <td colspan="5" align="center" style="background-color:#FFFF99;"><h2 ><strong> &#128519; Thanks and Visit Again &#128519;</strong></h2></td>
-          </tr>
-        </table>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="4"><b>Total Amount:</b></td><td><?php echo $totalprice;?></td>
+                            </tr>
+                            <tr style="background-color:white;">
+                                <td colspan="3"><b>CGST:</b></td><td><b>2.5%</b></td><td><?php echo round(($totalprice*2.5)/100,2);?></td>
+                            </tr>
+                            <tr>
+                                <td colspan="3"><b>SGST:</b></td><td><b>2.5%</b></td><td><?php echo round(($totalprice*2.5)/100,2);?></td>
+                            </tr>
+                            <tr>
+                                <td colspan="4"><b>Net Amount:</b></td><td><?php echo round($net);?></td>
+                            </tr>
+        
+                        </tfoot>
+                    </table>
+                    <div class="row justify-content-between">
+                        <div class="col-auto">
+                            <b>Payment Type:</b><p class="mb-0"><select id="paytype" name="paytype" class="form-control" required='required' >
+								<option value=""> --</option>
+								<option value="cash"> Cash</option>
+								<option value="online">Online</option>
+								<option value="card"> Card</option>
+							</select></p>
+                        </div>
+                        <div class="col-auto">
+                            
+                        </div>
+                    </div>
+                    
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
             </div>
-        <div class="col-50" align="center">
+    <div class="col-50" align="center">
           <input type="submit" name="btnn"  class="btn"  value="Submit">
           <button type="button" id="print" onclick="printDiv();">Print Bill</button>  
           <input type="hidden"  id="invnoc" value="<?php echo $invno; ?>">
           <button type="button" id="cancel" onclick="cancelorder();">Cancel</button>
-          <input type="text" name="cuname" id="cuname" value="<?php echo $cus_name; ?>">
-          <input type="text" name="cumobile" id="cumobile" value="<?php echo $cus_mobile; ?>">
+          <input type="hidden" name="cuname" id="cuname" value="<?php echo $cus_name; ?>">
+          <input type="hidden" name="cumobile" id="cumobile" value="<?php echo $cus_mobile; ?>">
           <button type="button" id="btn1111" onclick="addmore();">Add</button>
         </div>
     </form>
@@ -185,5 +246,8 @@ $employee=$_SESSION["name"];
   window.open('order.php?invno='+invno+'&name='+cname+'&mobile='+mobile,'_parent');
   } 
 </script>
-  </body>
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/app.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
 </html>

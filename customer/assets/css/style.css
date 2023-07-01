@@ -2,7 +2,7 @@
 
 /*======================================
  [ -Main Stylesheet-
-  Theme: Restabook
+  Theme: Rasbhog
   Version: 1.0
   Last change: 31/05/2020 ]
 ++ Fonts ++
@@ -23,7 +23,7 @@
 ++ blog ++
 ++ responsive ++
 /*-------------Fonts---------------------------------------*/
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&amp;family=Poppins:wght@200;300;400;500;600;700;800&amp;display=swap');
+@import url('font.css');
 /*-------------General Style---------------------------------------*/
 html {
 	overflow-x: hidden !important;

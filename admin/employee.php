@@ -24,14 +24,14 @@
 </head>
 
 <body>
-	
-    <div id="preloader" class="preloader">
-        <div class='inner'>
-            <div class='line1'></div>
-            <div class='line2'></div>
-            <div class='line3'></div>
-        </div>
-    </div>
+
+	<div id="preloader" class="preloader">
+		<div class='inner'>
+			<div class='line1'></div>
+			<div class='line2'></div>
+			<div class='line3'></div>
+		</div>
+	</div>
 	<section class="fxt-template-animation fxt-template-layout21">
 		<!-- Animation Start Here -->
 		<div id="particles-js"></div>
@@ -48,66 +48,76 @@
 							<form method="POST" action="action.php">
 								<div class="form-group">
 									<div class="fxt-transformY-50 fxt-transition-delay-1">
-										<input type="text" id="name" class="form-control" name="name" placeholder="Name" required="required">
+										<input type="text" id="name" class="form-control" name="name" placeholder="Name"
+											required="required">
 										<input type="hidden" id="action" name="action" value="employee">
 									</div>
 								</div>
-                                <div class="form-group">
+								<div class="form-group">
 									<div class="fxt-transformY-50 fxt-transition-delay-1">
-										<input type="text" id="fname" class="form-control" name="fname" placeholder="Father's Name" required="required">
+										<input type="text" id="fname" class="form-control" name="fname"
+											placeholder="Father's Name" required="required">
 									</div>
 								</div>
 								<div class="form-group">
 									<div class="fxt-transformY-50 fxt-transition-delay-1">
-										<input type="mobile" id="mobile" class="form-control" name="mobile" placeholder="Mobile Number" required="required">
+										<input type="mobile" id="mobile" class="form-control" name="mobile"
+											placeholder="Mobile Number" required="required">
 									</div>
 								</div>
 								<div class="form-group">
 									<div class="fxt-transformY-50 fxt-transition-delay-1">
-										<input type="email" id="email" class="form-control" name="email" placeholder="Email" required="required">
+										<input type="email" id="email" class="form-control" name="email"
+											placeholder="Email" required="required">
 									</div>
 								</div>
-                                <div class="form-group">
-                                    <div class="fxt-transformY-50 fxt-transition-delay-1">
-                                        <input type="address" id="address" name="address" placeholder="Emplyee Address" class="form-control"  required="required"/>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="fxt-transformY-50 fxt-transition-delay-1">
-                                        <label for="ID card" >ID card type &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</label>
-                                            <select name="idt" id="idt" class="form-control">
-                                                <option value="aadhar card">--Select--</option>
-                                                <option value="aadhar card">Aadhar Card</option>
-                                                <option value="Passport">Passport</option>
-                                                <option value="pan card">Pan Card</option>
-                                                <option value="driving licence">Driving Licence</option>
-                                                <option value="voter id card">Voter ID Card</option>
-                                            </select>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="fxt-transformY-50 fxt-transition-delay-1">
-                                        <input type="idnum" id="idnum" name="idnum" placeholder="Employee Id Number" class="form-control"  required="required"/>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="fxt-transformY-50 fxt-transition-delay-1">
-                                        <input type="designation" id="designation" name="designation" placeholder="Designation" class="form-control"  required="required"/>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="fxt-transformY-50 fxt-transition-delay-1">
-                                        <input type="outlet" id="outnum" name="outlet" placeholder="Outlet Number" class="form-control"  required="required"/>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="fxt-transformY-50 fxt-transition-delay-1">
-                                        <input type="out_add" id="out_add" name="out_add" placeholder="Outlet Address" class="form-control"  required="required"/>
-                                    </div>
-                                </div>
+								<div class="form-group">
+									<div class="fxt-transformY-50 fxt-transition-delay-1">
+										<input type="address" id="address" name="address" placeholder="Emplyee Address"
+											class="form-control" required="required" />
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="fxt-transformY-50 fxt-transition-delay-1">
+										<label for="ID card">ID card type &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</label>
+										<select name="idt" id="idt" class="form-control">
+											<option value="aadhar card">--Select--</option>
+											<option value="aadhar card">Aadhar Card</option>
+											<option value="Passport">Passport</option>
+											<option value="pan card">Pan Card</option>
+											<option value="driving licence">Driving Licence</option>
+											<option value="voter id card">Voter ID Card</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="fxt-transformY-50 fxt-transition-delay-1">
+										<input type="idnum" id="idnum" name="idnum" placeholder="Employee Id Number"
+											class="form-control" required="required" />
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="fxt-transformY-50 fxt-transition-delay-1">
+										<input type="designation" id="designation" name="designation"
+											placeholder="Designation" class="form-control" required="required" />
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="fxt-transformY-50 fxt-transition-delay-1">
+										<input type="outlet" id="outnum" name="outlet" placeholder="Outlet Number"
+											class="form-control" required="required" />
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="fxt-transformY-50 fxt-transition-delay-1">
+										<input type="out_add" id="out_add" name="out_add" placeholder="Outlet Address"
+											class="form-control" required="required" />
+									</div>
+								</div>
 								<div class="form-group">
 									<div class="fxt-transformY-50 fxt-transition-delay-2">
-										<input id="password" type="password" class="form-control" name="password" placeholder="******" required="required">
+										<input id="password" type="password" class="form-control" name="password"
+											placeholder="******" required="required">
 										<i toggle="#password" class="fa fa-fw fa-eye toggle-password field-icon"></i>
 									</div>
 								</div>
@@ -130,7 +140,9 @@
 						</div>
 						<div class="fxt-footer">
 							<div class="fxt-transformY-50 fxt-transition-delay-9">
-								<p>Already have an account?<button type="submit" name="btnsubmit" class="switcher-text2 inline-text"><a href="../index.php">Log in</a></button></p>
+								<p>Already have an account?<button type="submit" name="btnsubmit"
+										class="switcher-text2 inline-text"><a href="../index.php">Log in</a></button>
+								</p>
 							</div>
 						</div>
 					</div>
@@ -153,4 +165,5 @@
 	<script src="js/main.js"></script>
 
 </body>
+
 </html>

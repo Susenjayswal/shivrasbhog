@@ -1,13 +1,12 @@
 <?php
 session_start();
 require_once('../admin/connect.php');
-if($_SESSION["email"] == "")
-{
-    echo "<script>top.window.location.href='../index.php';</script>";
+if ($_SESSION["email"] == "") {
+	echo "<script>top.window.location.href='../index.php';</script>";
 }
-	$invono=$_REQUEST["invono"];
-	$name=$_REQUEST["name"];
-	
+$invono = $_REQUEST["invono"];
+$name = $_REQUEST["name"];
+
 ?>
 <!doctype html>
 <html class="no-js" lang="">
@@ -35,14 +34,14 @@ if($_SESSION["email"] == "")
 </head>
 
 <body>
-	
-    <div id="preloader" class="preloader">
-        <div class='inner'>
-            <div class='line1'></div>
-            <div class='line2'></div>
-            <div class='line3'></div>
-        </div>
-    </div>
+
+	<div id="preloader" class="preloader">
+		<div class='inner'>
+			<div class='line1'></div>
+			<div class='line2'></div>
+			<div class='line3'></div>
+		</div>
+	</div>
 	<section class="fxt-template-animation fxt-template-layout21">
 		<!-- Animation Start Here -->
 		<div id="particles-js"></div>
@@ -54,31 +53,36 @@ if($_SESSION["email"] == "")
 						<div class="fxt-header">
 							<a href="staff.php" class="fxt-logo"><img src="../admin/img/logo.png" alt="Logo"></a>
 							<h2>Rasbhog</h2>
-                            <h6><strong>Hi! <?php echo $_SESSION["name"];?></strong></h6>
-                            <p><strong>Stock Entry</strong></p>
+							<h6><strong>Hi!
+									<?php echo $_SESSION["name"]; ?>
+								</strong></h6>
+							<p><strong>Stock Entry</strong></p>
 						</div>
 						<div class="fxt-form">
 							<form method="POST" action="../admin/actionemployee.php" enctype="multipart/form-data">
 								<div class="form-group">
 									<div class="fxt-transformY-50 fxt-transition-delay-1">
-										<input type="text" id="invono" class="form-control" name="invono" placeholder="Item Name" value="<?php echo $invono; ?>" required="required">
+										<input type="text" id="invono" class="form-control" name="invono"
+											placeholder="Item Name" value="<?php echo $invono; ?>" required="required">
 										<input type="hidden" id="action" name="action" value="stock">
 									</div>
 								</div>
-                                <div class="form-group">
-									<div class="fxt-transformY-50 fxt-transition-delay-1">
-										<input type="text" id="name" class="form-control" name="name" value="<?php echo $name; ?>"placeholder="Invoice Number">
-									</div>
-								</div>
-								
 								<div class="form-group">
 									<div class="fxt-transformY-50 fxt-transition-delay-1">
-										<input type="text" id="rate" class="form-control" name="rate" placeholder="Item Rate">
+										<input type="text" id="name" class="form-control" name="name"
+											value="<?php echo $name; ?>" placeholder="Invoice Number">
+									</div>
+								</div>
+
+								<div class="form-group">
+									<div class="fxt-transformY-50 fxt-transition-delay-1">
+										<input type="text" id="rate" class="form-control" name="rate"
+											placeholder="Item Rate">
 									</div>
 								</div>
 								<div class="form-group">
 									<div class="fxt-transformY-50 fxt-transition-delay-1">
-									<label> Rate Type</label>
+										<label> Rate Type</label>
 										<select name="type" id="type" class="form-control">
 											<option>&nbsp;&nbsp;----&nbsp;&nbsp;</option>
 											<option>Rs/Kg</option>
@@ -91,44 +95,51 @@ if($_SESSION["email"] == "")
 								</div>
 								<div class="form-group">
 									<div class="fxt-transformY-50 fxt-transition-delay-1">
-										<input type="text" id="quantity" class="form-control" name="quantity" placeholder="Quantity">
+										<input type="text" id="quantity" class="form-control" name="quantity"
+											placeholder="Quantity">
 									</div>
 								</div>
 								<div class="form-group">
 									<div class="fxt-transformY-50 fxt-transition-delay-1">
-										<input type="number" id="price" class="form-control" name="price" placeholder="Price">
+										<input type="number" id="price" class="form-control" name="price"
+											placeholder="Price">
 									</div>
 								</div>
 								<div class="form-group">
 									<div class="fxt-transformY-50 fxt-transition-delay-1">
-										<input type="date" id="date" class="form-control" name="date" placeholder="Date">
+										<input type="date" id="date" class="form-control" name="date"
+											placeholder="Date">
 									</div>
 								</div>
-								
-								
-								
+
+
+
 								<div class="form-group">
 									<div class="fxt-transformY-50 fxt-transition-delay-4">
-									<input  type="submit" name="btn11"  id='btn11'  value="Add"  class="fxt-btn-fill" >
-									
-                                    <input type="submit" name="btn2"  id='btn2'  class="fxt-btn-fill"  value="Submit">
+										<input type="submit" name="btn11" id='btn11' value="Add" class="fxt-btn-fill">
+
+										<input type="submit" name="btn2" id='btn2' class="fxt-btn-fill" value="Submit">
 									</div>
 								</div>
-                                <div class="form-group">
+								<div class="form-group">
 									<div class="fxt-transformY-50 fxt-transition-delay-4">
-										<button type="submit" class="fxt-btn-fill" onclick="window.open('staff.php','_parent');" class="fxt-btn-fill">Home</button>
+										<button type="submit" class="fxt-btn-fill"
+											onclick="window.open('staff.php','_parent');"
+											class="fxt-btn-fill">Home</button>
 									</div>
 								</div>
-                                <div class="form-group">
+								<div class="form-group">
 									<div class="fxt-transformY-50 fxt-transition-delay-4">
-                                <button type="submit" onclick="window.open('../admin/logout.php','_parent');" class="fxt-btn-fill">Logout</button>
-                            </div></div>
-</div>
-							</form>
+										<button type="submit" onclick="window.open('../admin/logout.php','_parent');"
+											class="fxt-btn-fill">Logout</button>
+									</div>
+								</div>
 						</div>
+						</form>
 					</div>
 				</div>
 			</div>
+		</div>
 		</div>
 	</section>
 	<!-- jquery-->
@@ -146,4 +157,5 @@ if($_SESSION["email"] == "")
 	<script src="../admin/js/main.js"></script>
 
 </body>
+
 </html>

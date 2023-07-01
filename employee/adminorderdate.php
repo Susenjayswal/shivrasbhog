@@ -1,9 +1,8 @@
 <?php
 session_start();
 require_once('../admin/connect.php');
-if($_SESSION["email"] == "")
-{
-    echo "<script>top.window.location.href='../index.php';</script>";
+if ($_SESSION["email"] == "") {
+	echo "<script>top.window.location.href='../index.php';</script>";
 }
 ?>
 <!doctype html>
@@ -33,15 +32,15 @@ if($_SESSION["email"] == "")
 
 <body>
 	<!--[if lt IE 8]>
-        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-    <div id="preloader" class="preloader">
-        <div class='inner'>
-            <div class='line1'></div>
-            <div class='line2'></div>
-            <div class='line3'></div>
-        </div>
-    </div>
+		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
+	<div id="preloader" class="preloader">
+		<div class='inner'>
+			<div class='line1'></div>
+			<div class='line2'></div>
+			<div class='line3'></div>
+		</div>
+	</div>
 	<section class="fxt-template-animation fxt-template-layout21">
 		<!-- Animation Start Here -->
 		<div id="particles-js"></div>
@@ -53,29 +52,35 @@ if($_SESSION["email"] == "")
 						<div class="fxt-header">
 							<a href="admin.php" class="fxt-logo"><img src="../admin/img/logo.png" alt="Logo"></a>
 							<h2>Rasbhog</h2>
-							<h6><strong>Hi! <?php echo $_SESSION["sname"];?></strong></h6>
+							<h6><strong>Hi!
+									<?php echo $_SESSION["sname"]; ?>
+								</strong></h6>
 						</div>
 						<div class="fxt-form">
-<div class=order>
-	<h2 align="center">Customer Order Report </h2>
-<form class="fxt-form" method="post">
-	<div class="form-group">
-		<label> Enter Start Date &nbsp;&nbsp;&nbsp;&nbsp;</label>
-	<input type="date" id="sdate" name="sdate"  placeholder="Enter Start Date" class="form-control">
+							<div class=order>
+								<h2 align="center">Customer Order Report </h2>
+								<form class="fxt-form" method="post">
+									<div class="form-group">
+										<label> Enter Start Date &nbsp;&nbsp;&nbsp;&nbsp;</label>
+										<input type="date" id="sdate" name="sdate" placeholder="Enter Start Date"
+											class="form-control">
 
-	</div>
-	<div class="form-group">
-	<label> Enter End Date   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-	<input type="date" id="edate" name="edate" placeholder="Enter End Date" class="form-control">
-	</div>
-	<div class="form-group">
-		<div class="fxt-transformY-50 fxt-transition-delay-4">
-		<input type="button" name="btnsubmit1" id="btnsubmit1" value="Submit" class="fxt-btn-fill">
-		</div>
-	</div>
-</form>
-<span><button type="submit" class="fxt-btn-fill"><a class="lgx-scroll" href="../admin/logout.php">Logout</a></button></span>
-</div>
+									</div>
+									<div class="form-group">
+										<label> Enter End Date &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+										<input type="date" id="edate" name="edate" placeholder="Enter End Date"
+											class="form-control">
+									</div>
+									<div class="form-group">
+										<div class="fxt-transformY-50 fxt-transition-delay-4">
+											<input type="button" name="btnsubmit1" id="btnsubmit1" value="Submit"
+												class="fxt-btn-fill">
+										</div>
+									</div>
+								</form>
+								<span><button type="submit" class="fxt-btn-fill"><a class="lgx-scroll"
+											href="../admin/logout.php">Logout</a></button></span>
+							</div>
 							</form>
 						</div>
 					</div>
@@ -96,15 +101,16 @@ if($_SESSION["email"] == "")
 	<script src="../admin/js/validator.min.js"></script>
 	<!-- Custom Js -->
 	<script src="../admin/js/main.js"></script>
-	
 
-<script>
-	$("#btnsubmit1").on('click',function(){
-			let sdate=$("#sdate").val();
-			let edate=$("#edate").val();
+
+	<script>
+		$("#btnsubmit1").on('click', function () {
+			let sdate = $("#sdate").val();
+			let edate = $("#edate").val();
 			alert(sdate);
-			window.open('adminorderreport.php?sdate='+sdate+'&edate='+edate,'_parent');
-	});
-</script>
+			window.open('adminorderreport.php?sdate=' + sdate + '&edate=' + edate, '_parent');
+		});
+	</script>
 </body>
+
 </html>

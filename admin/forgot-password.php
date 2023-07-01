@@ -10,20 +10,20 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Favicon -->
 	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
-	<?php include('include/css.php');?>
+	<?php include('include/css.php'); ?>
 </head>
 
 <body>
 	<!--[if lt IE 8]>
-        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-    <div id="preloader" class="preloader">
-        <div class='inner'>
-            <div class='line1'></div>
-            <div class='line2'></div>
-            <div class='line3'></div>
-        </div>
-    </div>
+		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
+	<div id="preloader" class="preloader">
+		<div class='inner'>
+			<div class='line1'></div>
+			<div class='line2'></div>
+			<div class='line3'></div>
+		</div>
+	</div>
 	<section class="fxt-template-animation fxt-template-layout21">
 		<!-- Animation Start Here -->
 		<div id="particles-js"></div>
@@ -40,7 +40,8 @@
 							<form method="POST">
 								<div class="form-group">
 									<div class="fxt-transformY-50 fxt-transition-delay-1">
-										<input type="email" id="email" class="form-control" name="email" placeholder="Email" required="required">
+										<input type="email" id="email" class="form-control" name="email"
+											placeholder="Email" required="required">
 									</div>
 								</div>
 								<div class="form-group">
@@ -52,7 +53,8 @@
 						</div>
 						<div class="fxt-footer">
 							<div class="fxt-transformY-50 fxt-transition-delay-9">
-								<p>Don't have an account?<a href="../admin/employee.php" class="switcher-text2 inline-text">Register</a></p>
+								<p>Don't have an account?<a href="../admin/employee.php"
+										class="switcher-text2 inline-text">Register</a></p>
 							</div>
 						</div>
 					</div>
@@ -60,7 +62,8 @@
 			</div>
 		</div>
 	</section>
-	<?php include('include/script.php');?>
+	<?php include('include/script.php'); ?>
 
 </body>
+
 </html>

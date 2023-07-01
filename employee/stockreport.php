@@ -31,13 +31,13 @@ $enddate=$_REQUEST["enddate"];
   <div class="col-50" align="center">
           
           <button type="button" id="print" onclick="printDiv();">Print Report</button>  
-          <button type="button" id="cancel" onclick="window.open('staff.php','_parent');">Done</button>
+          <button type="button" id="cancel" onclick="window.open('admin.php','_parent');">Done</button>
           
         </div>
         <table  border="1" cellspacing="0"  align="center" style="border-collapse:collapse; border-spacing:0px;">
           <tr>
             <td align="center" rowspan="2"><img src="../customer/assets/img/favicon.png"></td>
-            <td colspan="2" rowspan="2"><div align="center" style="font-style:oblique;"><strong>RASBHOG</strong></br> A unit of Shiv Rasbhog LLP</br></div></td>
+            <td colspan="4" rowspan="2"><div align="center" style="font-style:oblique;"><strong>RASBHOG</strong></br> A unit of Shiv Rasbhog LLP</br></div></td>
             <td colspan="2"><div><strong>Lic No. </strong></div> 
           </tr>
           <tr>
@@ -52,7 +52,9 @@ $enddate=$_REQUEST["enddate"];
             <td><strong>Date</strong></td>
             <td><strong>Invno</strong></td>
             <td><Strong>Name</strong></td>
-            <td><Strong>Net Amount</strong></td> 
+            <td><Strong>Rate</strong></td>
+            <td><Strong>Quantity</strong></td> 
+            <td><Strong>Price</strong></td>
           </tr>
             <?php
                $sr=0;
@@ -67,10 +69,9 @@ $enddate=$_REQUEST["enddate"];
             <td><?php echo $d->date?></td>
             <td><?php echo $d->invono;?></td>
             <td><?php echo $d->name; ?></td>
-            <td><?php echo $d->total; ?></td>
-            <td><a href="<?php echo $d->filename?>">Show Bill</a></td>
-              <?php
-              ?>
+            <td><?php echo $d->rate," ",$d->type; ?></td>
+            <td><?php echo $d->quantity; ?></td>
+            <td><?php echo $d->price; ?></td>
           </tr>
             <?php
               }

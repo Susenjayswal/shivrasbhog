@@ -1,9 +1,8 @@
 <?php
 session_start();
 require_once('../admin/connect.php');
-if($_SESSION["email"] == "")
-{
-    echo "<script>top.window.location.href='../index.php';</script>";
+if ($_SESSION["email"] == "") {
+	echo "<script>top.window.location.href='../index.php';</script>";
 }
 ?>
 <!doctype html>
@@ -33,13 +32,13 @@ if($_SESSION["email"] == "")
 
 <body>
 
-    <div id="preloader" class="preloader">
-        <div class='inner'>
-            <div class='line1'></div>
-            <div class='line2'></div>
-            <div class='line3'></div>
-        </div>
-    </div>
+	<div id="preloader" class="preloader">
+		<div class='inner'>
+			<div class='line1'></div>
+			<div class='line2'></div>
+			<div class='line3'></div>
+		</div>
+	</div>
 	<section class="fxt-template-animation fxt-template-layout21">
 		<!-- Animation Start Here -->
 		<div id="particles-js"></div>
@@ -51,28 +50,35 @@ if($_SESSION["email"] == "")
 						<div class="fxt-header">
 							<a href="admin.php" class="fxt-logo"><img src="../admin/img/logo.png" alt="Logo"></a>
 							<h2>Rasbhog</h2>
-							<h6><strong>Hi! <?php echo $_SESSION["sname"];?></strong></h6>
+							<h6><strong>Hi!
+									<?php echo $_SESSION["sname"]; ?>
+								</strong></h6>
 						</div>
 						<div class="fxt-form">
-							
-<div class=payment>
-	<h2 align="center">Payment Report </h2>
-<form class="fxt-form" method="post" action="../admin/actionorder.php">
-	<div class="form-group">
-		<label> Enter Start Date &nbsp;&nbsp;&nbsp;&nbsp;</label>
-	<input type="date" id="stdate" name="stdate" placeholder="Enter Start Date" class="form-control">
-	</div>
-	<div class="form-group">
-	<label> Enter End Date   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-	<input type="date" id="endate" name="endate" placeholder="Enter End Date" class="form-control">
-	</div>
-	<div class="form-group">
-		<input type="button" name="btnsubmit" id="btnsubmit" value="Submit" class="fxt-btn-fill">
-		</div>
-		<div>
-		<button type="submit" class="fxt-btn-fill"><a class="lgx-scroll" href="../admin/logout.php">Logout</a></button>	</div>
-</form>
-</div>
+
+							<div class=payment>
+								<h2 align="center">Payment Report </h2>
+								<form class="fxt-form" method="post" action="../admin/actionorder.php">
+									<div class="form-group">
+										<label> Enter Start Date &nbsp;&nbsp;&nbsp;&nbsp;</label>
+										<input type="date" id="stdate" name="stdate" placeholder="Enter Start Date"
+											class="form-control">
+									</div>
+									<div class="form-group">
+										<label> Enter End Date &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+										<input type="date" id="endate" name="endate" placeholder="Enter End Date"
+											class="form-control">
+									</div>
+									<div class="form-group">
+										<input type="button" name="btnsubmit" id="btnsubmit" value="Submit"
+											class="fxt-btn-fill">
+									</div>
+									<div>
+										<button type="submit" class="fxt-btn-fill"><a class="lgx-scroll"
+												href="../admin/logout.php">Logout</a></button>
+									</div>
+								</form>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -93,13 +99,14 @@ if($_SESSION["email"] == "")
 	<!-- Custom Js -->
 	<script src="../admin/js/main.js"></script>
 	<script>
-	$("#btnsubmit").on('click',function(){
-			let stdate=$("#stdate").val();
-			let endate=$("#endate").val();
+		$("#btnsubmit").on('click', function () {
+			let stdate = $("#stdate").val();
+			let endate = $("#endate").val();
 			//alert(stdate);
-			window.open('adminpayreport.php?stdate='+stdate+'&endate='+endate,'_parent');
+			window.open('adminpayreport.php?stdate=' + stdate + '&endate=' + endate, '_parent');
 
-	});
-    </script>
+		});
+	</script>
 </body>
+
 </html>

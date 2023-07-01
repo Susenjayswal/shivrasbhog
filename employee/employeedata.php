@@ -1,15 +1,12 @@
 <?php
 session_start();
 require_once('../admin/connect.php');
-if($_SESSION["email"] == "")
-{
-    echo "<script>top.window.location.href='../index.php';</script>";
+if ($_SESSION["email"] == "") {
+	echo "<script>top.window.location.href='../index.php';</script>";
 }
 ?>
 <!doctype html>
 <html class="no-js" lang="">
-
-
 
 <head>
 	<meta charset="utf-8">
@@ -33,15 +30,15 @@ if($_SESSION["email"] == "")
 
 <body>
 	<!--[if lt IE 8]>
-        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-    <div id="preloader" class="preloader">
-        <div class='inner'>
-            <div class='line1'></div>
-            <div class='line2'></div>
-            <div class='line3'></div>
-        </div>
-    </div>
+		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
+	<div id="preloader" class="preloader">
+		<div class='inner'>
+			<div class='line1'></div>
+			<div class='line2'></div>
+			<div class='line3'></div>
+		</div>
+	</div>
 	<section class="fxt-template-animation fxt-template-layout21">
 		<!-- Animation Start Here -->
 		<div id="particles-js"></div>
@@ -53,34 +50,40 @@ if($_SESSION["email"] == "")
 						<div class="fxt-header">
 							<a href="admin.php" class="fxt-logo"><img src="../admin/img/logo.png" alt="Logo"></a>
 							<h2>Rasbhog</h2>
-							<h6><strong>Hi! <?php echo $_SESSION["name"];?></strong></h6>
+							<h6><strong>Hi!
+									<?php echo $_SESSION["name"]; ?>
+								</strong></h6>
 						</div>
 						<div class="fxt-form">
 							<form method="POST"><!--action="../admin/action.php"-->
-							
-<hr><hr>
-<div class=employee>
-	<h2 align="center">Employee Details</h2>
-<form class="fxt-form" method="post" >
-	<div class="form-group">
-		<label> Employee Name &nbsp;&nbsp;&nbsp;&nbsp;</label>
-	<input type="name" id="empname" name="empname" placeholder="Enter Employee Name" class="form-control">
-</div>
-	<div class="form-group">
-		<input type="button" name="btnsubmit2" id="btnsubmit2" value="Submit" class="fxt-btn-fill">
-		</div>	
-</form>
-</div>
+
+								<hr>
+								<hr>
+								<div class=employee>
+									<h2 align="center">Employee Details</h2>
+									<form class="fxt-form" method="post">
+										<div class="form-group">
+											<label> Employee Name &nbsp;&nbsp;&nbsp;&nbsp;</label>
+											<input type="name" id="empname" name="empname"
+												placeholder="Enter Employee Name" class="form-control">
+										</div>
+										<div class="form-group">
+											<input type="button" name="btnsubmit2" id="btnsubmit2" value="Submit"
+												class="fxt-btn-fill">
+										</div>
+									</form>
+								</div>
 
 
 
-<button type="submit" class="fxt-btn-fill"><a class="lgx-scroll" href="../admin/logout.php">Logout</a></button>
-</div>
-							</form>
+								<button type="submit" class="fxt-btn-fill"><a class="lgx-scroll"
+										href="../admin/logout.php">Logout</a></button>
 						</div>
+						</form>
 					</div>
 				</div>
 			</div>
+		</div>
 		</div>
 	</section>
 	<!-- jquery-->
@@ -96,16 +99,17 @@ if($_SESSION["email"] == "")
 	<script src="../admin/js/validator.min.js"></script>
 	<!-- Custom Js -->
 	<script src="../admin/js/main.js"></script>
-	
-	<script>
-	$("#btnsubmit2").on('click',function(){
-			let name=$("#empname").val();
-			alert(name);
-			window.open('employeedetails.php?empname='+name,'_parent');
 
-	});
-</script>
+	<script>
+		$("#btnsubmit2").on('click', function () {
+			let name = $("#empname").val();
+			alert(name);
+			window.open('employeedetails.php?empname=' + name, '_parent');
+
+		});
+	</script>
 
 
 </body>
+
 </html>

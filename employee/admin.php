@@ -1,9 +1,8 @@
 <?php
 session_start();
 require_once('../admin/connect.php');
-if($_SESSION["email"] == "")
-{
-    echo "<script>top.window.location.href='../index.php';</script>";
+if ($_SESSION["email"] == "") {
+	echo "<script>top.window.location.href='../index.php';</script>";
 }
 ?>
 <!doctype html>
@@ -32,14 +31,14 @@ if($_SESSION["email"] == "")
 </head>
 
 <body>
-	
-    <div id="preloader" class="preloader">
-        <div class='inner'>
-            <div class='line1'></div>
-            <div class='line2'></div>
-            <div class='line3'></div>
-        </div>
-    </div>
+
+	<div id="preloader" class="preloader">
+		<div class='inner'>
+			<div class='line1'></div>
+			<div class='line2'></div>
+			<div class='line3'></div>
+		</div>
+	</div>
 	<section class="fxt-template-animation fxt-template-layout21">
 		<!-- Animation Start Here -->
 		<div id="particles-js"></div>
@@ -51,30 +50,42 @@ if($_SESSION["email"] == "")
 						<div class="fxt-header">
 							<a href="admin.php" class="fxt-logo"><img src="../admin/img/logo.png" alt="Logo"></a>
 							<h2>Rasbhog</h2>
-							<h6><strong>Hi! <?php echo $_SESSION["name"];?></strong></h6>
+							<h6><strong>Hi!
+									<?php echo $_SESSION["name"]; ?>
+								</strong></h6>
 						</div>
 						<div class="fxt-form">
 							<form method="POST"><!--action="../admin/action.php"-->
-							<div class="navrow">
-<table cellspacing="10px">
-<button type="submit" class="fxt-btn-fill"><a class="lgx-scroll"  href="employeedata.php" id="payment">Employee Details</a></button>
-<button type="submit" class="fxt-btn-fill"><a class="lgx-scroll" href="attendancedata.php" id="order">Employee Attendance</a></button>
-		<button type="submit" class="fxt-btn-fill"><a class="lgx-scroll" href="adminpayment.php">Payment Report</a></button>
-	   <button type="submit" class="fxt-btn-fill"><a class="lgx-scroll" href="adminorderdate.php">Order Report</a></button>  
-       <button type="submit" class="fxt-btn-fill"><a class="lgx-scroll" href="stockdate.php">Stock Report</a></button>
-	   <button type="submit" class="fxt-btn-fill"><a class="lgx-scroll" href="../admin/uploadmenu.php">Upload Menu</a></button>
-	   <button type="submit" class="fxt-btn-fill"><a class="lgx-scroll" href="expensesdata.php">Expenses Report</a></button>
-</table>
-</div>
+								<div class="navrow">
+									<table cellspacing="10px">
+										<button type="submit" class="fxt-btn-fill"><a class="lgx-scroll"
+												href="employeedata.php" id="payment">Employee Details</a></button>
+										<button type="submit" class="fxt-btn-fill"><a class="lgx-scroll"
+												href="attendancedata.php" id="order">Employee Attendance</a></button>
+										<button type="submit" class="fxt-btn-fill"><a class="lgx-scroll"
+												href="adminpayment.php">Payment Report</a></button>
+										<button type="submit" class="fxt-btn-fill"><a class="lgx-scroll"
+												href="adminorderdate.php">Order Report</a></button>
+										<button type="submit" class="fxt-btn-fill"><a class="lgx-scroll"
+												href="stockdate.php">Stock Report</a></button>
+										<button type="submit" class="fxt-btn-fill"><a class="lgx-scroll"
+												href="../admin/uploadmenu.php">Upload Menu</a></button>
+										<button type="submit" class="fxt-btn-fill"><a class="lgx-scroll"
+												href="expensesdata.php">Expenses Report</a></button>
+										<button type="submit" class="fxt-btn-fill"><a class="lgx-scroll"
+												href="contactdata.php">Meeting Report</a></button>
+									</table>
+								</div>
 
 
-<button type="submit" class="fxt-btn-fill"><a class="lgx-scroll" href="../admin/logout.php">Logout</a></button>
-</div>
-							</form>
+								<button type="submit" class="fxt-btn-fill"><a class="lgx-scroll"
+										href="../admin/logout.php">Logout</a></button>
 						</div>
+						</form>
 					</div>
 				</div>
 			</div>
+		</div>
 		</div>
 	</section>
 	<!-- jquery-->
@@ -90,9 +101,10 @@ if($_SESSION["email"] == "")
 	<script src="../admin/js/validator.min.js"></script>
 	<!-- Custom Js -->
 	<script src="../admin/js/main.js"></script>
-	
-	
+
+
 
 
 </body>
+
 </html>
