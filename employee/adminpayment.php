@@ -51,7 +51,7 @@ if ($_SESSION["email"] == "") {
 							<a href="admin.php" class="fxt-logo"><img src="../admin/img/logo.png" alt="Logo"></a>
 							<h2>Rasbhog</h2>
 							<h6><strong>Hi!
-									<?php echo $_SESSION["sname"]; ?>
+									<?php echo $_SESSION["name"]; ?>
 								</strong></h6>
 						</div>
 						<div class="fxt-form">
@@ -102,7 +102,6 @@ if ($_SESSION["email"] == "") {
 		$("#btnsubmit").on('click', function () {
 			let stdate = $("#stdate").val();
 			let endate = $("#endate").val();
-			//alert(stdate);
 			window.open('adminpayreport.php?stdate=' + stdate + '&endate=' + endate, '_parent');
 
 		});

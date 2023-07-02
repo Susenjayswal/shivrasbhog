@@ -122,11 +122,7 @@ $name = $_REQUEST["name"];
 									</div>
 								</div>
 								<div class="form-group">
-									<div class="fxt-transformY-50 fxt-transition-delay-4">
-										<button type="submit" class="fxt-btn-fill"
-											onclick="window.open('staff.php','_parent');"
-											class="fxt-btn-fill">Home</button>
-									</div>
+									
 								</div>
 								<div class="form-group">
 									<div class="fxt-transformY-50 fxt-transition-delay-4">

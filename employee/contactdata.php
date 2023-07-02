@@ -104,7 +104,6 @@ if ($_SESSION["email"] == "") {
         $("#btnsubmit6").on('click', function () {
             let stadate = $("#stadate").val();
             let enddate1 = $("#enddate1").val();
-            //alert(stdate);
             window.open('meetingreport.php?stadate=' + stadate + '&enddate1=' + enddate1, '_parent');
 
         });

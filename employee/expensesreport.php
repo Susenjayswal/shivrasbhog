@@ -32,7 +32,7 @@ $enddate = $_REQUEST["enddate"];
       <div class="col-50" align="center">
 
         <button type="button" id="print" onclick="printDiv();">Print Report</button>
-        <button type="button" id="cancel" onclick="window.open('staff.php','_parent');">Done</button>
+        <button type="button" id="cancel" onclick="window.open('admin.php','_parent');">Done</button>
 
       </div>
       <table border="1" cellspacing="0" align="center" style="border-collapse:collapse; border-spacing:0px;">
@@ -43,7 +43,7 @@ $enddate = $_REQUEST["enddate"];
               LLP</br></div>
           </td>
           <td colspan="2">
-            <div><strong>Lic No. </strong></div>
+            <div><strong>Lic No. ABZ-4264</strong></div>
         </tr>
         <tr>
 

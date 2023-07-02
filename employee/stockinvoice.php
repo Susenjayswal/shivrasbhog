@@ -86,7 +86,11 @@ if ($_SESSION["email"] == "") {
 
 						</div>
 						</form>
-
+						<div class="fxt-transformY-50 fxt-transition-delay-4">
+										<button type="submit" class="fxt-btn-fill"
+											onclick="window.open('staff.php','_parent');"
+											class="fxt-btn-fill">Home</button>
+									</div>
 						<button type="submit" class="fxt-btn-fill"> <a href="../admin/logout.php">Logout</a></button>
 
 					</div>

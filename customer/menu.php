@@ -182,5 +182,13 @@ require_once("../admin/connect.php");
 <?php include('include/footer.php'); ?>
 </div>
 <?php include('include/js.php'); ?>
+<script>
+        $(document).ready(function () {
+            setInterval(function () {
+                document.getElementById("Time").innerHTML = GetTime();
+                //do something else
+            }, 1000)
+        });
+    </script>
 </body>
 </html>

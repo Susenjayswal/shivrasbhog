@@ -37,24 +37,24 @@ $edate = $_REQUEST["edate"];
       <table border="1" cellspacing="0" align="center" style="border-collapse:collapse; border-spacing:0px;">
         <tr>
           <td align="center" rowspan="2"><img src="../customer/assets/img/favicon.png"></td>
-          <td colspan="2">
-            <h1 align="center" style="font-style:oblique;">RASBHOG</h1>
+          <td colspan="4" rowspan="2">
+            <div align="center" style="font-style:oblique;"><strong>RASBHOG</strong></br> A unit of Shiv
+              Rasbhog LLP</br></div>
           </td>
           <td colspan="2">
-            <h5><strong>Lic No. </strong></h5>
+            <div><strong>Lic No. ABZ-4264 </strong></div>
         </tr>
         <tr>
-          <td colspan="2">
-            <h4 align="center">A unit of Shiv Rasbhog LLP</h4>
-          </td>
-          <td colspan="2" rowspan="1"><strong>Patna City, Patna</br>Bihar</br>800009</strong></td>
+
+          <td colspan="2" rowspan="1"><strong>Patna City, Patna,</br>Bihar 800009</strong></td>
         </tr>
         <tr align="center" style="background-color:lightblue;">
           <td><Strong>S. No.</strong></td>
           <td><Strong>Invocie No.</strong></td>
           <td><Strong>Name</strong></td>
+          <td><Strong>Price</strong></td>
           <td><Strong>Quantity</strong></td>
-          <td><Strong>Item Price</strong></td>
+          <td><Strong>Total Amount</strong></td>
         </tr>
         <?php
         $sr = 0;
@@ -72,7 +72,7 @@ $edate = $_REQUEST["edate"];
             <td>
               <?php echo $d->itname; ?>
             </td>
-            <td>
+            <td align="left">
               <?php echo $d->price; ?>
             </td>
             <td>

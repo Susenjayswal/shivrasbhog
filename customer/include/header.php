@@ -30,10 +30,9 @@
                                 echo date('d-m-Y');
                                 ?>
                             </strong>&emsp;&emsp;&emsp;
-                            <span id="Time"></span>
-                            </strong>
-                            <script type="text/javascript"> function setInterval();</script>
-                            </span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                            <strong><span id="Time"></span>
+                            <script type="text/javascript">function setInterval();</script>
+                            </span></strong>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
                         </div>
                         <ul class="nav navbar-nav lgx-nav">
                             <li><a class="lgx-scroll active" href="index.php">Home</a></li>

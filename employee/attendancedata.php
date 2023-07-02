@@ -115,7 +115,6 @@ if ($_SESSION["email"] == "") {
 			let stardate = $("#stardate").val();
 			let enddate1 = $("#enddate1").val();
 			let ename = $("#ename").val();
-			alert(ename);
 			window.open('attendance.php?ename=' + ename + '&stardate=' + stardate + '&enddate1=' + enddate1, '_parent');
 
 		});

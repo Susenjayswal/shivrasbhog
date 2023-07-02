@@ -28,7 +28,7 @@ if (@$_REQUEST["del"] == "DeleteOrder") {
     echo "<script>top.window.location.href='vieworder.php?name=$name&invno=$invno&mobile=$mobile&paytype=$paytype';</script>";
 }
 //Cancel order
-if ($_REQUEST["action"] == "cancelorder") {
+if (@$_REQUEST["action"] == "cancelorder") {
     $invno = $_REQUEST["invno"];
     $item = "";
     $amount = 0;

@@ -4,6 +4,7 @@ require_once("../admin/connect.php");
 if ($_POST["action"] == "contact") {
     extract($_POST);
     mysqli_query($con, "insert into contact(name,email,mobile,address,reason,date,cdate) values('$name','$email','$mobile','$address','$reason','$date',curdate())");
+    echo "<script>alert('Your data is successfully submitted... & We will contact you soon....')</script>";
     $msg = "Your Details Entered Succefully";
     echo "<script>top.window.location.href='contact.php?msg=$msg&name=$name&mobile=$mobile'</script>";
 }

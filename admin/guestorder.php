@@ -37,7 +37,7 @@ $invno = $_REQUEST["invno"];
 				<div class="col-xl-6 col-lg-7 col-sm-12 col-12 fxt-bg-color">
 					<div class="fxt-content">
 						<div class="fxt-header">
-							<a href="../customer/inedx.php" class="fxt-logo"><img src="img/logo.png" alt="Logo"></a>
+							<a href="../customer/index.php" class="fxt-logo"><img src="img/logo.png" alt="Logo"></a>
 
 							<h2>
 								<strong?>Customer Order</strong>
@@ -123,13 +123,13 @@ $invno = $_REQUEST["invno"];
 								$("#ptype").on('change', function () {
 									var ptype = $(this).val();
 									var action = "chooseptype";
-									//alert(ptype);
+									
 									$.ajax({
 										type: 'POST',
 										url: 'ajax.php',
 										data: { ptype: ptype, action: action },
 										success: function (data) {
-											//alert(data);
+											
 											$('#pname').html(data);
 											//console.log(htmlresponse);
 										}
@@ -139,13 +139,13 @@ $invno = $_REQUEST["invno"];
 								$("#pname").on('change', function () {
 									var pid = $(this).val();
 									var action = "selectproduct";
-									//alert(ptype+pname+action);
+									
 									$.ajax({
 										type: 'POST',
 										url: 'ajax.php',
 										data: { pid: pid, action: action },
 										success: function (data) {
-											//alert(data);
+											
 											$('#price').val(data);
 											//console.log(htmlresponse);
 										}

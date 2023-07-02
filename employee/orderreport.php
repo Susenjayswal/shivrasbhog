@@ -29,27 +29,31 @@ $edate = $_REQUEST["edate"];
 <body style="background-color:#FFF8DC">
   <div id="printbill">
     <form action="../admin/actionorder.php" method="post" class="form-group">
+      <div class="col-50" align="center">
+        <button type="button" id="print" onclick="printDiv();">Print Bill</button>
+        <button type="button" id="cancel" onclick="window.open('staff.php','_parent');">Done</button>
+      </div>
       <table border="1" cellspacing="0" align="center" style="border-collapse:collapse; border-spacing:0px;">
         <tr>
           <td align="center" rowspan="2"><img src="../customer/assets/img/favicon.png"></td>
-          <td colspan="2">
-            <h1 align="center" style="font-style:oblique;">RASBHOG</h1>
+          <td colspan="4" rowspan="2">
+            <div align="center" style="font-style:oblique;"><strong>RASBHOG</strong></br> A unit of Shiv
+              Rasbhog LLP</br></div>
           </td>
           <td colspan="2">
-            <h5><strong>Lic No. </strong></h5>
+            <div><strong>Lic No. ABZ-4264 </strong></div>
         </tr>
         <tr>
-          <td colspan="2">
-            <h4 align="center">A unit of Shiv Rasbhog LLP</h4>
-          </td>
-          <td colspan="2" rowspan="1"><strong>Patna City, Patna</br>Bihar</br>800009</strong></td>
+
+          <td colspan="2" rowspan="1"><strong>Patna City, Patna,</br>Bihar 800009</strong></td>
         </tr>
         <tr align="center" style="background-color:lightblue;">
           <td><Strong>S. No.</strong></td>
           <td><Strong>Invocie No.</strong></td>
           <td><Strong>Name</strong></td>
+          <td><Strong>Price</strong></td>
           <td><Strong>Quantity</strong></td>
-          <td><Strong>Item Price</strong></td>
+          <td><strong>Amount</strong></td>
         </tr>
         <?php
         $sr = 0;
@@ -82,12 +86,6 @@ $edate = $_REQUEST["edate"];
         ?>
       </table>
   </div>
-  <div class="col-50" align="center">
-    <!--<input type="submit" name="btnn"  class="btn"  value="Submit" onclick="window.open('staff.php','_parent');">-->
-    <button type="button" id="print" onclick="printDiv();">Print Bill</button>
-    <button type="button" id="cancel" onclick="window.open('staff.php','_parent');">Done</button>
-  </div>
   </form>
 </body>
-
 </html>

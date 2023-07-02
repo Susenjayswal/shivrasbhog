@@ -103,7 +103,6 @@ if ($_SESSION["email"] == "") {
 	<script>
 		$("#btnsubmit2").on('click', function () {
 			let name = $("#empname").val();
-			alert(name);
 			window.open('employeedetails.php?empname=' + name, '_parent');
 
 		});

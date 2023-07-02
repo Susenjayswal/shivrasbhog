@@ -105,7 +105,6 @@ if ($_SESSION["email"] == "") {
 		$("#btnsubmit5").on('click', function () {
 			let startdate = $("#startdate").val();
 			let enddate = $("#enddate").val();
-			//alert(startdate);
 			window.open('expensesreport.php?startdate=' + startdate + '&enddate=' + enddate, '_parent');
 
 		});

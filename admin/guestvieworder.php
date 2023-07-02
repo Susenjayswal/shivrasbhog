@@ -35,7 +35,7 @@ $invno = $_REQUEST["invno"];
             </div>
           </td>
           <td colspan="2">
-            <div><strong>Lic No. </strong></div>
+            <div><strong>Lic No. ABZ-4264 </strong></div>
             <input type="hidden" name="name" value="<?php echo $cus_name; ?>">
             <input type="hidden" name="mobile" value="<?php echo $cus_mobile; ?>">
             <input type="hidden" name="invno" value="<?php echo $invno; ?>">
@@ -206,8 +206,6 @@ $invno = $_REQUEST["invno"];
       let cname = $("#cname").val();
       let mobile = $("#mobile").val();
       let invno = $("#invno").val();
-      alert(cname);
-
       window.open('guestorder.php?cname=' + cname + '&mobile=' + mobile + '&invno=' + invno, '_parent');
     });
   </script>

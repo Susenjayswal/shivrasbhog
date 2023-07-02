@@ -104,7 +104,6 @@ if ($_SESSION["email"] == "") {
 		$("#btnsubmit").on('click', function () {
 			let stdate = $("#stdate").val();
 			let endate = $("#endate").val();
-			//alert(stdate);
 			window.open('payreport.php?stdate=' + stdate + '&endate=' + endate, '_parent');
 
 		});

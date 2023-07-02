@@ -105,7 +105,6 @@ if ($_SESSION["email"] == "") {
 		$("#btnsubmit1").on('click', function () {
 			let sdate = $("#sdate").val();
 			let edate = $("#edate").val();
-			alert(sdate);
 			window.open('orderreport.php?sdate=' + sdate + '&edate=' + edate, '_parent');
 		});
 	</script>

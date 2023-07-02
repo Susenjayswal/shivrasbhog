@@ -38,7 +38,7 @@ $enddate=$_REQUEST["enddate"];
           <tr>
             <td align="center" rowspan="2"><img src="../customer/assets/img/favicon.png"></td>
             <td colspan="4" rowspan="2"><div align="center" style="font-style:oblique;"><strong>RASBHOG</strong></br> A unit of Shiv Rasbhog LLP</br></div></td>
-            <td colspan="2"><div><strong>Lic No. </strong></div> 
+            <td colspan="2"><div><strong>Lic No. ABZ-4264</strong></div> 
           </tr>
           <tr>
             
