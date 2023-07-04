@@ -1,5 +1,5 @@
 <?php
-require_once("../admin/connect.php");
+require_once("admin/connect.php");
 ?>
 <!doctype html>
 <html class="no-js" lang="en">
@@ -15,30 +15,6 @@ require_once("../admin/connect.php");
     <meta name="description" content="Responsive Rasbhog HTML5 Template" />
     <meta name="keywords" content="Bootstrap3, restaurant, food, cafe, Template, bakery , Responsive, HTML5" />
     <meta name="author" content="themearth.com" />
-
-    <!-- twitter card starts from here, if you don't need remove this section -->
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@yourtwitterusername" />
-    <meta name="twitter:creator" content="@yourtwitterusername" />
-    <meta name="twitter:url" content="http://yourdomain.com/" />
-    <meta name="twitter:title" content="Your home page title, max 140 char" />
-    <!-- maximum 140 char -->
-    <meta name="twitter:description" content="Your site description, maximum 140 char " />
-    <!-- maximum 140 char -->
-    <meta name="twitter:image" content="assets/img/twittercardimg/twittercard-280-150.jpg" />
-    <!-- when you post this page url in twitter , this image will be shown -->
-    <!-- twitter card ends from here -->
-
-    <!-- facebook open graph starts from here, if you don't need then delete open graph related  -->
-    <meta property="og:title" content="Your home page title" />
-    <meta property="og:url" content="http://your domain here.com" />
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:site_name" content="Your site name here" />
-    <!--meta property="fb:admins" content="" /--> <!-- use this if you have  -->
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="assets/img/opengraph/fbphoto.jpg" />
-    <!-- when you post this page url in facebook , this image will be shown -->
-    <!-- facebook open graph ends from here -->
 
     <!--  FAVICON AND TOUCH ICONS -->
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico" />
@@ -68,7 +44,6 @@ require_once("../admin/connect.php");
             padding: 5px;
         }
 
-        /* Clear floats after image containers */
         .row::after {
             content: "";
             clear: both;
@@ -80,7 +55,7 @@ require_once("../admin/connect.php");
 <body class="page page-template" );">
     <div class="lgx-container ">
         <?php include('include/header.php'); ?>
-        <table width="1200" align="Center" border="0px" style="border-collapse:collapse; border-spacing:0px;">
+        <table align="Center" border="0px" style="border-collapse:collapse; border-spacing:0px;">
             <caption>
                 <h2 align="center" style="font-style:oblique;"><strong>Shiv Rasbhog</strong></h2><br><br>
                 <div class="row" align="center">
@@ -182,7 +157,6 @@ require_once("../admin/connect.php");
             </div>
         </div>
 
-
         <?php include('include/footer.php'); ?>
     </div>
     <?php include('include/js.php'); ?>
@@ -190,9 +164,9 @@ require_once("../admin/connect.php");
         $(document).ready(function () {
             setInterval(function () {
                 document.getElementById("Time").innerHTML = GetTime();
-                //do something else
             }, 1000)
         });
     </script>
 </body>
+
 </html>

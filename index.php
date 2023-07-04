@@ -1,109 +1,563 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>Rasbhog</title>
-	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- Favicon -->
-	<link rel="shortcut icon" type="image/x-icon" href="admin/img/favicon.png">
-	<link rel="stylesheet" href="admin/css/bootstrap.min.css">
-	<!-- Fontawesome CSS -->
-	<link rel="stylesheet" href="admin/css/fontawesome-all.min.css">
-	<!-- Flaticon CSS -->
-	<link rel="stylesheet" href="admin/font/flaticon.css">
-	<!-- Google Web Fonts -->
-	<link href="../admin/css/fontswap.css" rel="stylesheet">
-	<!-- Custom CSS -->
-	<link rel="stylesheet" href="style.css">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!-- The above 3 meta tags *must* come first in the head -->
+
+    <!-- SITE TITLE -->
+    <title>Shiv Rasbhog</title>
+    <meta name="description" content="Responsive Rasbhog HTML5 Template" />
+    <meta name="keywords" content="Bootstrap3, restaurant, food, cafe, Template, bakery , Responsive, HTML5" />
+    <meta name="author" content="themearth.com" />
+
+    <!--  FAVICON AND TOUCH ICONS -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png" />
+    <!-- this icon shows in browser toolbar -->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
+    <!-- this icon shows in browser toolbar -->
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/favicon/manifest.json">
+
+    <?php include('include/css.php') ?>
+
+    <!-- MASTER  STYLESHEET  -->
+    <link id="lgx-master-style" rel="stylesheet" href="assets/css/style-default.min.css" media="all" />
+
+    <!-- MODERNIZER CSS  -->
+    <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+
 </head>
 
-<body>
-	<div id="preloader" class="preloader">
-		<div class='inner'>
-			<div class='line1'></div>
-			<div class='line2'></div>
-			<div class='line3'></div>
-		</div>
-	</div>
-	<section class="fxt-template-animation fxt-template-layout21">
-		<!-- Animation Start Here -->
-		<div id="particles-js"></div>
-		<!-- Animation End Here -->
-		<div class="container">
-			<div class="row align-items-center justify-content-center">
-				<div class="col-xl-6 col-lg-7 col-sm-12 col-12 fxt-bg-color">
-					<div class="fxt-content">
-						<div class="fxt-header">
-							<a href="../index.php" class="fxt-logo"><img src="admin/img/logo.png" alt="Logo"></a></br>
-							<h3> <strong>Login to Rasbhog </strong></h3>
-						</div>
-						<div class="fxt-form">
-							<form method="POST" action="admin/action.php">
-								<div class="form-group">
-									<div class="fxt-transformY-50 fxt-transition-delay-1">
-										<input type="email" id="email" class="form-control" name="email"
-											placeholder="Email" required="required">
-										<input type="hidden" id="action" name="action" value="login">
-									</div>
-								</div>
-								<div class="form-group">
-									<div class="fxt-transformY-50 fxt-transition-delay-2">
-										<input id="password" type="password" class="form-control" name="password"
-											placeholder="********" required="required">
-										<i toggle="#password" class="fa fa-fw fa-eye toggle-password field-icon"></i>
-									</div>
-								</div>
-								<div class="form-group">
-									<div class="fxt-transformY-50 fxt-transition-delay-3">
-										<div class="fxt-checkbox-area">
-											<div class="checkbox">
-												<input id="checkbox1" type="checkbox">
-												<label for="checkbox1">Keep me logged in</label>
-											</div>
-											<a href="admin/forgot-password.php" class="switcher-text">Forgot
-												Password</a>
-										</div>
-									</div>
-								</div>
-								<div class="form-group">
-									<div class="fxt-transformY-50 fxt-transition-delay-4">
-										<button type="submit" name="btnsubmit" class="fxt-btn-fill">Log in</button>
-										<?php
-										if (isset($_REQUEST['msg'])) {
-											echo "<font color='red' size='+2'>" . $_REQUEST['msg'] . "</font>";
-										}
-										?>
-									</div>
-								</div>
-							</form>
-						</div>
-						<div class="fxt-footer">
-							<div class="fxt-transformY-50 fxt-transition-delay-9">
-								<p>Don't have an account?<a href="admin/employee.php"
-										class="switcher-text2 inline-text">Register</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- jquery-->
-	<script src="admin/js/jquery-3.5.0.min.js"></script>
-	<!-- Bootstrap js -->
-	<script src="admin/js/bootstrap.min.js"></script>
-	<!-- Imagesloaded js -->
-	<script src="admin/js/imagesloaded.pkgd.min.js"></script>
-	<!-- Particles js -->
-	<script src="admin/js/particles.min.js"></script>
-	<script src="admin/js/particles-1.js"></script>
-	<!-- Validator js -->
-	<script src="admin/js/validator.min.js"></script>
-	<!-- Custom Js -->
-	<script src="admin/js/main.js"></script>
+<body class="home">
+
+    <div class="lgx-container ">
+
+        <?php include('include/header.php') ?>
+
+        <!--BANNER-->
+        <section class="section-gap">
+            <div class="lgx-banner">
+                <div class="lgx-banner-style">
+                    <div class="lgx-inner lgx-inner-fixed">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="lgx-banner-info">
+                                        <!--lgx-banner-info-center lgx-banner-info-black lgx-banner-info-big lgx-banner-info-bg-->
+                                        <h3 class="subtitle"></h3>
+                                        <h3 class="subtitle"><span id="lgx-typed-string">Shiv Rasbhog</span></h3>
+                                        <h6 class="title">"THODA MEETHA THODA NAMKIN"</h6>
+                                        <p class="text">
+                                            <strong> YOU ALL TO EXPERIENCE VARIETIES OF FLAVOURS IN SWEETS AND SNACKS.
+                                                ENJOY THE TASTES OF OUR SPECIALS.</strong>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--//.ROW-->
+                        </div>
+                        <!-- //.CONTAINER -->
+                    </div>
+                    <!-- //.INNER -->
+                </div>
+            </div>
+        </section>
+        <!--BANNER END-->
+
+
+        <!--ABOUT-->
+        <section class="section-gap">
+            <div id="lgx-about" class="lgx-about"> <!--lgx-about-bottom-->
+                <div class="lgx-inner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-7">
+                                <div class="lgx-about-area">
+                                    <div class="lgx-heading">
+                                        <h2 class="heading-title" style="font-style:oblique;">Welcome to Shiv Rasbhog ?
+                                        </h2>
+                                    </div>
+                                    <div class="lgx-about-content">
+                                        <blockquote class="about">
+                                            <strong>
+                                                <h3 style="font-style:oblique;"><strong> where taste and delight meets!
+                                                </h3></br>Enjoy a World of Divine Sweets and Irresistible Snacks at
+                                                <strong style="font-style:oblique;">Shiv Rasbhog</strong><br> Discover a
+                                                Flavour of Paradise Today by Visiting <strong
+                                                    style="font-style:oblique;">Shiv Rasbhog,</strong>! Enjoy a Variety
+                                                of Mouthwatering Snacks and Delicious Sweets to Satisfy Your
+                                                Cravings.</br> <strong style="font-style:oblique;">Shiv
+                                                    Rasbhog,</strong> now the finest selection of snacks and sweets to
+                                                experience Snacktime Bliss. </br>Enjoy Our Handmade Snacks & Artisan
+                                                Sweets to Delight Your Taste Buds. Find Your Ideal Snack and Sweet
+                                                Treats at <strong style="font-style:oblique;">Shiv Rasbhog,</strong> the
+                                                Best Place for Snacks and Sweets. <br>Explore Our Shop's Unique
+                                                Selection of Snacks and Sweets to Upgrade Your Snacking Experience. Our
+                                                savoury snacks and irresistibly sweet creations will tantalise your
+                                                senses. Discover a Wide Variety of Tempting Snacks and Heavenly Sweets
+                                                at <strong style="font-style:oblique;">Shiv Rasbhog,</strong> to
+                                                Experience the Joy of Snacking.
+                                            </strong>
+                                        </blockquote>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--//.ROW-->
+                    </div>
+                    <!-- //.CONTAINER -->
+                </div>
+                <!-- //.INNER -->
+            </div>
+        </section>
+        <!--ABOUT END-->
+
+
+
+        <!--ABOUT TOP-->
+        <section>
+            <div id="lgx-about-top" class="lgx-about-top">
+                <div class="lgx-inner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="about-top-single">
+                                    <a href="#"><img src=assets/img/gallery/jalebi.gif alt="about-icon" width="200px"
+                                            height="200px"></a>
+                                    <h3 class="title"><a href="#">SWEETS</a></h3>
+                                    <h5 style="font-style:oblique;"><strong>You Deserve A Sweet Treat Today.</strong>
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="about-top-single">
+                                    <a href="#"><img src=assets/img/gallery/pavbhaji.gif alt="about-icon" width="200px"
+                                            height="200px"></a>
+                                    <h3 class="title"><a href="#">SNACKS</a></h3>
+                                    <h5 style="font-style:oblique;"><strong>The soul of India is its food</strong></h5>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="about-top-single">
+                                    <a href="#"><img src=assets/img/gallery/Rasbhog.gif alt="about-icon" width="200px"
+                                            height="200px"></a>
+                                    <h3 class="title"><a href="#">SPECIALTY</a></h3>
+                                    <h5 style="font-style:oblique;"><strong>Deliciously Irresistible Sweets for Every
+                                            Craving</strong></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- //.CONTAINER -->
+                </div><!-- //.INNER -->
+            </div>
+        </section>
+        <!--ABOUT TOP END-->
+
+
+
+
+        <!--MENU ITEMS-->
+        <section>
+            <div id="lgx-menu" class="lgx-menu"> <!--lgx-menu-white-->
+                <div class="lgx-inner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="lgx-heading lgx-heading-white">
+                                    <h2 class="heading-title">MENU : BILL OF FARE</h2>
+                                    <h4 class="heading-subtitle">Some Trendy And Popular Varieties Presented For You
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <!--//.ROW-->
+                    </div>
+                    <div class="container-fluids section-gap"> <!--section-gap-->
+                        <div class="lgx-tab"> <!--lgx-tab-another2-->
+                            <div class="lgx-filter-area"> <!--lgx-filter-area-white-->
+                                <ul id="lgx-filter" class="lgx-filter list-inline">
+                                    <li class="active"><a class="lgx-filter-item" href="javascript:void(0)"
+                                            data-filter="*">Appetizers<span>Fresh & Delicious</span></a></li>
+                                    <li><a class="lgx-filter-item" href="javascript:void(0)"
+                                            data-filter=".SWEETS">Sweets<span>Pure & Luscious</span></a></li>
+                                    <li><a class="lgx-filter-item" href="javascript:void(0)"
+                                            data-filter=".SNACKS">Snacks<span>Hot & Satisfying</span></a></li>
+                                    <li><a class="lgx-filter-item" href="javascript:void(0)"
+                                            data-filter=".Rasbhog">Rasbhog's Special<span>Rich & Candied</span></a></li>
+                                    <!--<li><a class="lgx-filter-item" href="javascript:void(0)" data-filter=".drinks">Drinks<span>Fresh & Delicious</span></a></li>-->
+                                </ul>
+                            </div>
+        </section>
+        <section>
+            <div id="lgx-grid-wrapper" class="lgx-grid-wrapper"> <!--lgx-grid-wrapper-gap-->
+
+                <div class="lgx-grid-item SWEETS">
+                    <!-- lgx-grid-item-col1 lgx-grid-item-col2 lgx-grid-item-col3 lgx-grid-item-col4-->
+                    <div class="lgx-single-menu">
+                        <a href="#">
+                            <figure>
+                                <img src="assets/img/menu 1/bal mithai.jpg" alt="Menu Item">
+                                <figcaption>
+
+                                </figcaption>
+                            </figure>
+                            <div class="menu-info">
+                                <h3 class="title">BAL MITHAI</h3>
+                                <h5 class="subtitle">Swarg uttarakhand ka</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div><!--//ITEM-->
+
+                <div class="lgx-grid-item SWEETS">
+                    <!-- lgx-grid-item-col1 lgx-grid-item-col2 lgx-grid-item-col3 lgx-grid-item-col4-->
+                    <div class="lgx-single-menu">
+                        <a href="#">
+                            <figure>
+                                <img src="assets/img/menu 1/bubble basket.jpg" alt="Menu Item">
+                                <figcaption>
+
+                                </figcaption>
+                            </figure>
+                            <div class="menu-info">
+                                <h3 class="title">BUBBLE BASKET</h3>
+                                <h5 class="subtitle">Chocolate</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div><!--//ITEM-->
+
+                <div class="lgx-grid-item SWEETS">
+                    <!-- lgx-grid-item-col1 lgx-grid-item-col2 lgx-grid-item-col3 lgx-grid-item-col4-->
+                    <div class="lgx-single-menu">
+                        <a href="#">
+                            <figure>
+                                <img src="assets/img/menu 1/gajar.webp" alt="Menu Item">
+                                <figcaption>
+
+                                </figcaption>
+                            </figure>
+                            <div class="menu-info">
+                                <h3 class="title">GAJAR KA HALWA</h3>
+                                <h5 class="subtitle">Sabki pasand ka</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div><!--//ITEM-->
+
+                <div class="lgx-grid-item SWEETS">
+                    <!-- lgx-grid-item-col1 lgx-grid-item-col2 lgx-grid-item-col3 lgx-grid-item-col4-->
+                    <div class="lgx-single-menu">
+                        <a href="#">
+                            <figure>
+                                <img src="assets/img/menu 1/ghewar.jpg" alt="Menu Item">
+                                <figcaption>
+
+                                </figcaption>
+                            </figure>
+                            <div class="menu-info">
+                                <h3 class="title">RAJASTHANI GHEVAR</h3>
+                                <h5 class="subtitle">Rajasthani</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div><!--//ITEM-->
+
+                <div class="lgx-grid-item SWEETS">
+                    <!-- lgx-grid-item-col1 lgx-grid-item-col2 lgx-grid-item-col3 lgx-grid-item-col4-->
+                    <div class="lgx-single-menu">
+                        <a href="#">
+                            <figure>
+                                <img src="assets/img/menu 1/gulab.webp" alt="Menu Item">
+                                <figcaption>
+
+                                </figcaption>
+                            </figure>
+                            <div class="menu-info">
+                                <h3 class="title">GULAB JAMUN</h3>
+                                <h5 class="subtitle">Chaand ka tukda</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div><!--//ITEM-->
+
+                <div class="lgx-grid-item SNACKS">
+                    <!-- lgx-grid-item-col1 lgx-grid-item-col2 lgx-grid-item-col3 lgx-grid-item-col4-->
+                    <div class="lgx-single-menu">
+                        <a href="#">
+                            <figure>
+                                <img src="assets/img/menu 1/panipuri.jpg" alt="Menu Item">
+                                <figcaption>
+
+                                </figcaption>
+                            </figure>
+                            <div class="menu-info">
+                                <h3 class="title">PANIPURI</h3>
+                                <h5 class="subtitle">Babu shona</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div><!--//ITEM-->
+
+                <div class="lgx-grid-item SNACKS">
+                    <!-- lgx-grid-item-col1 lgx-grid-item-col2 lgx-grid-item-col3 lgx-grid-item-col4-->
+                    <div class="lgx-single-menu">
+                        <a href="#">
+                            <figure>
+                                <img src="assets/img/menu 1/momos.jpg" alt="Menu Item">
+                                <figcaption>
+
+                                </figcaption>
+                            </figure>
+                            <div class="menu-info">
+                                <h3 class="title">SOYA MOMOS</h3>
+                                <h5 class="subtitle">Ankhon dekhi</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div><!--//ITEM-->
+
+                <div class="lgx-grid-item SNACKS">
+                    <!-- lgx-grid-item-col1 lgx-grid-item-col2 lgx-grid-item-col3 lgx-grid-item-col4-->
+                    <div class="lgx-single-menu">
+                        <a href="#">
+                            <figure>
+                                <img src="assets/img/menu 1/paneer tikka.jpg" alt="Menu Item">
+                                <figcaption>
+
+                                </figcaption>
+                            </figure>
+                            <div class="menu-info">
+                                <h3 class="title">PANEER TIKKA</h3>
+                                <h5 class="subtitle">Bejubaan</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div><!--//ITEM-->
+
+                <div class="lgx-grid-item Rasbhog">
+                    <!-- lgx-grid-item-col1 lgx-grid-item-col2 lgx-grid-item-col3 lgx-grid-item-col4-->
+                    <div class="lgx-single-menu">
+                        <a href="#">
+                            <figure>
+                                <img src="assets/img/menu 1/pan kulfi.jpg" alt="Menu Item">
+                                <figcaption>
+
+                                </figcaption>
+                            </figure>
+                            <div class="menu-info">
+                                <h3 class="title">RASBHOG PAN KULFI</h3>
+                                <h5 class="subtitle">RASBHOG SPECIALS</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div><!--//ITEM-->
+
+                <div class="lgx-grid-item Rasbhog">
+                    <!-- lgx-grid-item-col1 lgx-grid-item-col2 lgx-grid-item-col3 lgx-grid-item-col4-->
+                    <div class="lgx-single-menu">
+                        <a href="#">
+                            <figure>
+                                <img src="assets/img/menu 1/kesar pyasam.jpg" alt="Menu Item">
+                                <figcaption>
+
+                                </figcaption>
+                            </figure>
+                            <div class="menu-info">
+                                <h3 class="title">RASBHOG KESAR PYASAM</h3>
+                                <h5 class="subtitle">RASBHOG SPECIALS</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div><!--//ITEM-->
+
+                <div class="lgx-grid-item Rasbhog">
+                    <!-- lgx-grid-item-col1 lgx-grid-item-col2 lgx-grid-item-col3 lgx-grid-item-col4-->
+                    <div class="lgx-single-menu">
+                        <a href="#">
+                            <figure>
+                                <img src="assets/img/menu 1/ras madhuri.jpg" alt="Menu Item">
+                                <figcaption>
+
+                                </figcaption>
+                            </figure>
+                            <div class="menu-info">
+                                <h3 class="title">RASBHOG RASMADHURI</h3>
+                                <h5 class="subtitle">RASBHOG SPECIALS</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div><!--//ITEM-->
+                <div class="lgx-grid-item Rasbhog">
+                    <!-- lgx-grid-item-col1 lgx-grid-item-col2 lgx-grid-item-col3 lgx-grid-item-col4-->
+                    <div class="lgx-single-menu">
+                        <a href="menu.php">
+                            <figure>
+                                <img src="assets/img/menu 1/mainmenu.png" alt="Menu Item">
+                                <figcaption>
+
+                                </figcaption>
+                            </figure>
+                            <div class="menu-info">
+                                <h4 class="title"></h4>
+                                <h5 class="subtitle">PLEASE CLICK HERE</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div><!--//ITEM-->
+        </section>
+
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+    <!--MENU ITEMS END-->
+
+    </div>
+    </div>
+    </div>
+    <!--//.ROW-->
+    </div>
+    <!-- //.CONTAINER -->
+    </div>
+    <!-- //.INNER -->
+    </div>
+    </section>
+    <!--RESERVATION END-->
+
+
+
+    <!--TESTIMONIALS -->
+    <section>
+        <div id="lgx-testimonial" class="lgx-testimonial">
+            <div class="lgx-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="lgx-heading">
+                                <h2 class="heading-title">What people Say</h2>
+                                <h4 class="heading-subtitle">Latest Updates You Don't Miss Out!</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <!--//.ROW-->
+                    <div class="row">
+                        <div id="lgx-owltestimonial" class="lgx-owltestimonial lgx-owlnews">
+
+                            <div class="item">
+                                <!--Testimonial-single-->
+                                <blockquote class="lgx-testi-single">
+                                    <p><span>This is one of the best Snacks and sweets lover destination in our
+                                            City</span>This cozy restaurant has left the best impressions! I recommend
+                                        to everyone! I would like to come back here again and again.</p>
+                                    <div class="author">
+                                        <!--<img src="assets/img/testimonials/Tsusen.jpg" alt="author">-->
+                                        <h4 class="title"><a href="#"></a>Susen</h4>
+                                        <div class="rate">
+                                            <i class="fa fa-star active"></i>
+                                            <i class="fa fa-star active"></i>
+                                            <i class="fa fa-star active"></i>
+                                            <i class="fa fa-star active"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                    </div>
+                                </blockquote> <!--//.Testimonial-single-->
+                            </div> <!--//.Item-->
+                            <div class="item">
+                                <!--Testimonial-single-->
+                                <blockquote class="lgx-testi-single">
+                                    <p><span>It was amazing experience here.</span>The service we received was so
+                                        amazing and we will definitely be back again. They made us feel welcomed and
+                                        gave us an amazing experience..</p>
+                                    <div class="author">
+                                        <!--<img src="assets/img/testimonials/Tekta.jpg" alt="author">-->
+                                        <h4 class="title"><a href="#"></a>Ekta</h4>
+                                        <div class="rate">
+                                            <i class="fa fa-star active"></i>
+                                            <i class="fa fa-star active"></i>
+                                            <i class="fa fa-star active"></i>
+                                            <i class="fa fa-star active"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                    </div>
+                                </blockquote> <!--//.Testimonial-single-->
+                            </div> <!--//.Item-->
+                            <div class="item">
+                                <!--Testimonial-single-->
+                                <blockquote class="lgx-testi-single">
+                                    <p><span> Do yourself a favor and visit this lovely restaurant.</span>The service is
+                                        unmatched. The staff truly cares about your experience. The food is absolutely
+                                        amazing – everything we tasted melted in other mouths. </p>
+                                    <div class="author">
+                                        <!--<img src="assets/img/testimonials/abhis.jpg" alt="author">-->
+                                        <h4 class="title"><a href="#"></a>Abhishek</h4>
+                                        <div class="rate">
+                                            <i class="fa fa-star active"></i>
+                                            <i class="fa fa-star active"></i>
+                                            <i class="fa fa-star active"></i>
+                                            <i class="fa fa-star active"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                    </div>
+                                </blockquote> <!--//.Testimonial-single-->
+                            </div> <!--//.Item-->
+                            <div class="item">
+                                <!--Testimonial-single-->
+                                <blockquote class="lgx-testi-single">
+                                    <p><span>This place is great! </span>Atmosphere is chill and cool but the staff is
+                                        also really friendly. They know what they’re doing and what they’re talking
+                                        about, and you can tell making the customers happy is their main priority. Food
+                                        is pretty good.</p>
+                                    <div class="author">
+                                        <!--<img src="assets/img/testimonials/Tprachi.jpg" alt="author">-->
+                                        <h4 class="title"><a href="#"></a>Prachi</h4>
+                                        <div class="rate">
+                                            <i class="fa fa-star active"></i>
+                                            <i class="fa fa-star active"></i>
+                                            <i class="fa fa-star active"></i>
+                                            <i class="fa fa-star active"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                    </div>
+                                </blockquote> <!--//.Testimonial-single-->
+                            </div> <!--//.Item-->
+                        </div><!--l//#lgx-OWL NEWS-->
+                    </div>
+                </div><!-- //.CONTAINER -->
+            </div><!-- //.INNER -->
+        </div>
+    </section>
+    <!--TESTIMONIALS END-->
+
+    </div>
+    <?php include('include/footer.php') ?>
+    <?php include('include/js.php') ?>
+    <script>
+        $(document).ready(function () {
+            setInterval(function () {
+                document.getElementById("Time").innerHTML = GetTime();
+                //do something else
+            }, 1000)
+        });
+    </script>
 </body>
 
 </html>

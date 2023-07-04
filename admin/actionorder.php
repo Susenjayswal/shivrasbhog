@@ -39,6 +39,7 @@ if (@$_REQUEST["action"] == "cancelorder") {
     }
     mysqli_query($con, "insert into cancel(itname,totalamount,date,invno) values('$item','$amount',CURDATE(),'$invno')");
     updateinvoiceno($invno);
+    echo "<script>alert('Order Cancel of Invoice Number --> '+$invno)</script>" ;
     $msg = "Order cancel";
     echo "<script>top.window.location.href='customer.php?msg=$msg'</script>";
 }

@@ -2,7 +2,7 @@
 require_once("../admin/connect.php");
 session_start();
 if ($_SESSION["email"] == "") {
-    echo "<script>top.window.location.href='../index.php';</script>";
+    echo "<script>top.window.location.href='../admin/index.php';</script>";
 }
 $stadate = $_REQUEST["stadate"];
 $enddate1 = $_REQUEST["enddate1"];
@@ -62,8 +62,8 @@ $enddate1 = $_REQUEST["enddate1"];
                 while ($d = mysqli_fetch_object($rs)) {
                     $sr++;
                     ?>
-                    <tr align="center">
-                        <td>
+                    <tr align="left">
+                        <td align="center">
                             <?php echo $sr; ?>
                         </td>
                         <td>

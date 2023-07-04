@@ -39,9 +39,7 @@
                             <li><a href="#">SWEETS</a></li>
                             <li><a href="#">SNACKS</a></li>
                             <li><a href="#">RASBHOG'S SPECIAL</a></li>
-                            <!-- <li><a href="#">Dinner Items</a></li>
-                            <li><a href="#">Fresh Food Zone</a></li>
-                            <li><a href="#">We Offerd Food</a></li>-->
+                            
                         </ul>
                     </div> <!--//footer-area-->
                     <div class="lgx-footer-single">
@@ -72,19 +70,17 @@
                 </div>
                 <div class="lgx-footer-bottom">
                     <div class="lgx-copyright">
-                        <p>© 2022 Rasbhog is powered by <a href=shivrashbhog23@gmail.com">Shiv Rasbhog.</a> The property
+                        <p style="color:beige;">© 2022 Shiv Rasbhog is powered by <a href=shivrashbhog23@gmail.com">Shiv Rasbhog.</a> The property
                             of their owners.</p>
                     </div>
                     <div class="lgx-social-footer">
-                        <ul class="social">
-                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <!--<ul class="social">
+                            <li><a href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
                             <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                             <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                            <!-- <li><a href="#"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-github" aria-hidden="true"></i></a></li>-->
-                        </ul>
+                            
+                        </ul>-->
+                        <p align="right" style="color:beige;font-style:oblique;">Developed By Susen Jayswal</p>
                     </div>
                 </div>
 

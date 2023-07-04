@@ -2,7 +2,7 @@
 require_once("../admin/connect.php");
 session_start();
 if ($_SESSION["email"] == "") {
-  echo "<script>top.window.location.href='../index.php';</script>";
+  echo "<script>top.window.location.href='../admin/index.php';</script>";
 }
 $sdate = $_REQUEST["sdate"];
 $edate = $_REQUEST["edate"];
@@ -69,7 +69,7 @@ $edate = $_REQUEST["edate"];
             <td>
               <?php echo $d->invno; ?>
             </td>
-            <td>
+            <td align="left">
               <?php echo $d->itname; ?>
             </td>
             <td align="left">

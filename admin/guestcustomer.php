@@ -37,7 +37,7 @@ require_once("function.php");
 				<div class="col-xl-6 col-lg-7 col-sm-12 col-12 fxt-bg-color">
 					<div class="fxt-content">
 						<div class="fxt-header">
-							<a href="../customer/index.php" class="fxt-logo"><img src="img/logo.png" alt="Logo"></a>
+							<a href="../index.php" class="fxt-logo"><img src="img/logo.png" alt="Logo"></a>
 							<h2>
 								<strong?>Enter Your Details</strong>
 							</h2>

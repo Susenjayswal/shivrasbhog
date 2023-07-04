@@ -31,12 +31,12 @@ if ($_POST["action"] == "employee") {
     $rs = mysqli_query($con, "select *from employee where email='$email'");
     if (mysqli_num_rows($rs) > 0) {
         $msg = "You are registed and goto forgot password...";
-        echo "<script>top.window.location.href='../index.php?msg=$msg'</script>";
+        echo "<script>top.window.location.href='index.php?msg=$msg'</script>";
     } else {
         $password = md5($password);
         mysqli_query($con, "insert into employee(name,fname,mobile,email,address,idt,idnum,designation,outnum,outadd,password) values('$cname','$fname','$mobile','$email','$address','$idt','$idnum','$designation','$outlet','$out_add','$password')");
         $msg = "You are registered successfully. proceed to login....";
-        echo "<script>top.window.location.href='../index.php?msg=$msg'</script>";
+        echo "<script>top.window.location.href='index.php?msg=$msg'</script>";
     }
 }
 
@@ -62,7 +62,7 @@ if ($_POST["action"] == "login") {
         }
     } else {
         echo "<script>alert('You are not register or invalid password...');</script>";
-        echo "<script>top.window.location.href='../index.php';</script>";
+        echo "<script>top.window.location.href='index.php';</script>";
     }
 }
 

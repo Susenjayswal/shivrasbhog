@@ -3,7 +3,7 @@ require_once("connect.php");
 session_start();
 if($_SESSION["email"] == "")
 {
-    echo "<script>top.window.location.href='../index.php';</script>";
+    echo "<script>top.window.location.href='index.php';</script>";
 }
 $cus_name=$_REQUEST["name"];
 $cus_mobile=$_REQUEST["mobile"];

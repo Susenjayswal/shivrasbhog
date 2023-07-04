@@ -1,7 +1,7 @@
 <?php
 session_start();
 if ($_SESSION["email"] == "") {
-	echo "<script>top.window.location.href='../index.php';</script>";
+	echo "<script>top.window.location.href='index.php';</script>";
 }
 include("connect.php");
 $cname = $_REQUEST["name"];

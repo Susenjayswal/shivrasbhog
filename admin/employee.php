@@ -141,7 +141,7 @@
 						<div class="fxt-footer">
 							<div class="fxt-transformY-50 fxt-transition-delay-9">
 								<p>Already have an account?<button type="submit" name="btnsubmit"
-										class="switcher-text2 inline-text"><a href="../index.php">Log in</a></button>
+										class="switcher-text2 inline-text"><a href="index.php">Log in</a></button>
 								</p>
 							</div>
 						</div>

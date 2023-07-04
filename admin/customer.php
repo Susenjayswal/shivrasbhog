@@ -2,7 +2,7 @@
 session_start();
 require_once("function.php");
 if ($_SESSION["email"] == "") {
-	echo "<script>top.window.location.href='../index.php';</script>";
+	echo "<script>top.window.location.href='index.php';</script>";
 }
 ?>
 <!doctype html>
@@ -21,9 +21,7 @@ if ($_SESSION["email"] == "") {
 </head>
 
 <body>
-	<!--[if lt IE 8]>
-		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-	<![endif]-->
+	
 	<div id="preloader" class="preloader">
 		<div class='inner'>
 			<div class='line1'></div>

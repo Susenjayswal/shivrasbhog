@@ -2,7 +2,7 @@
 require_once("../admin/connect.php");
 session_start();
 if ($_SESSION["email"] == "") {
-  echo "<script>top.window.location.href='../index.php';</script>";
+  echo "<script>top.window.location.href='../admin/index.php';</script>";
 }
 $startdate = $_REQUEST["startdate"];
 $enddate = $_REQUEST["enddate"];

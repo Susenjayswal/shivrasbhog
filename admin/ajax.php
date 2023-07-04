@@ -2,7 +2,7 @@
 require_once("connect.php");
 @session_start();
 
-//CChoose product type
+//Choose product type
 if ($_POST["action"] == "chooseptype") {
     extract($_POST);
     $rs = mysqli_query($con, "select *from menu where type='$ptype' and available='AVAILABLE'");
@@ -12,7 +12,7 @@ if ($_POST["action"] == "chooseptype") {
     }
     echo $data;
 }
-//CChoose product name
+//Choose product name
 if ($_POST["action"] == "selectproduct") {
     extract($_POST);
 

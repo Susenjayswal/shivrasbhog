@@ -2,7 +2,7 @@
 session_start();
 require_once('../admin/connect.php');
 if ($_SESSION["email"] == "") {
-	echo "<script>top.window.location.href='../index.php';</script>";
+	echo "<script>top.window.location.href='../admin/index.php';</script>";
 }
 ?>
 <!doctype html>

@@ -1,5 +1,5 @@
 <?php
-require_once("../admin/connect.php");
+require_once("admin/connect.php");
 //Contact us
 if ($_POST["action"] == "contact") {
     extract($_POST);
