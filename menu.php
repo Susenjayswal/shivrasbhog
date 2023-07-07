@@ -62,7 +62,7 @@ require_once("admin/connect.php");
                                         <td><strong>Name</strong></td>
                                         <td><strong>Price</strong></td>
                                         <!--<td><strong>Availability</strong></td>-->
-                                        <td><strong>Order</strong></td>
+                                        <!--<td><strong>Order</strong></td>-->
                                     </tr>
                                 </div>
                                 <?php
@@ -88,8 +88,8 @@ require_once("admin/connect.php");
                                                 <?php echo ($d->ratetype); ?>
                                             </strong></td>
                                         <!--<td width="150px"><strong><?php //echo $d->available; ?></strong></td>-->
-                                        <td width="150px"><a href="admin/guestcustomer.php"><strong>Order Now</strong></a>
-                                        </td>
+                                        <!--<td width="150px"><a href="admin/guestcustomer.php"><strong>Order Now</strong></a>
+                                        </td>-->
 
                                     </tr>
                                     <?php

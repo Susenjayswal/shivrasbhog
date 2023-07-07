@@ -407,7 +407,7 @@
                 <div class="lgx-grid-item Rasbhog">
                     <!-- lgx-grid-item-col1 lgx-grid-item-col2 lgx-grid-item-col3 lgx-grid-item-col4-->
                     <div class="lgx-single-menu">
-                        <a href="menu.php">
+                        <a href="outlet.php">
                             <figure>
                                 <img src="assets/img/menu 1/mainmenu.png" alt="Menu Item">
                                 <figcaption>
