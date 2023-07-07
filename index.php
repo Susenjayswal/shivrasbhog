@@ -9,9 +9,16 @@
 
     <!-- SITE TITLE -->
     <title>Shiv Rasbhog</title>
-    <meta name="description" content="Responsive Rasbhog HTML5 Template" />
-    <meta name="keywords" content="Bootstrap3, restaurant, food, cafe, Template, bakery , Responsive, HTML5" />
-    <meta name="author" content="themearth.com" />
+    <meta name="description" content="Responsive Rasbhog Website" />
+    <meta name="shivrasbhog" content="Shiv Rasbhog is registered under Ministry of Corporate Affairs, Government of India" />
+    <meta name="shivrasbhog" content="Shiv Rabhog is a Snacks and Sweets outlet" />
+    <meta name="shivrasbhog" content="Shiv Rasbhog is started to expand the business" />
+    <meta name="shivrasbhog" content="Shiv Rasbhog has started accepting applications for the franchise." />
+    <meta name="shivrasbhog" content="Shiv Rasbhog is a pure vegeterian outlet" />
+    <meta name="shivrasbhog" content="Shiv Rasbhog provides fresh and delicious items to their customers" />
+    <meta name="shivrasbhog" content="Rasbhog is speciality of Shiv Rasbhog" />
+    <meta name="shivrasbhog" content="Shiv Rasbhog provides many type of snacks like Dosa, Pav Bhaji, Chaat ......." />
+    <meta name="author" content="Shiv Rasbhog" />
 
     <!--  FAVICON AND TOUCH ICONS -->
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png" />
