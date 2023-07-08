@@ -73,6 +73,8 @@ if ($_SESSION["email"] == "") {
 										<button type="submit" class="fxt-btn-fill"><a class="lgx-scroll"
 												href="expensesdata.php">Expenses Report</a></button>
 										<button type="submit" class="fxt-btn-fill"><a class="lgx-scroll"
+												href="feedback.php">Customer's Feedback</a></button>
+										<button type="submit" class="fxt-btn-fill"><a class="lgx-scroll"
 												href="contactdata.php">Meeting Report</a></button>
 									</table>
 								</div>

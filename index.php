@@ -9,7 +9,7 @@
 
     <!-- SITE TITLE -->
     <title>Shiv Rasbhog</title>
-    <meta name="description" content="Responsive Rasbhog Website" />
+    <meta name="description" content="Shiv Rasbhog, A destination of sweets and snacks lover" />
     <meta name="shivrasbhog" content="Shiv Rasbhog is registered under Ministry of Corporate Affairs, Government of India" />
     <meta name="shivrasbhog" content="Shiv Rabhog is a Snacks and Sweets outlet" />
     <meta name="shivrasbhog" content="Shiv Rasbhog is started to expand the business" />

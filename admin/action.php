@@ -34,7 +34,7 @@ if ($_POST["action"] == "employee") {
         echo "<script>top.window.location.href='index.php?msg=$msg'</script>";
     } else {
         $password = md5($password);
-        mysqli_query($con, "insert into employee(name,fname,mobile,email,address,idt,idnum,designation,outnum,outadd,password) values('$cname','$fname','$mobile','$email','$address','$idt','$idnum','$designation','$outlet','$out_add','$password')");
+        mysqli_query($con, "insert into employee(name,fname,mobile,email,address,idt,idnum,designation,outnum,outadd,password) values('$name','$fname','$mobile','$email','$address','$idt','$idnum','$designation','$outlet','$out_add','$password')");
         $msg = "You are registered successfully. proceed to login....";
         echo "<script>top.window.location.href='index.php?msg=$msg'</script>";
     }
@@ -48,13 +48,16 @@ if ($_POST["action"] == "login") {
     $rs = mysqli_query($con, "select *from employee where email='$email' and password='$password'");
     if (mysqli_num_rows($rs) > 0) {
         $d = mysqli_fetch_object($rs);
-        $_SESSION["email"] = $d->email;
-        $_SESSION["name"] = $d->name;
+        
+        
         if (($d->designation) == "Admin") {
+            $_SESSION["email"] = $d->email;
+            $_SESSION["name"] = $d->name;
             mysqli_query($con, "insert into login (name,email,id,date) values ('$d->name','$d->email','$d->id',curdate())");
             echo "<script>alert('You are valid user...');</script>";
             echo "<script>top.window.location.href='../employee/admin.php';</script>";
         } else {
+            $_SESSION["semail"] = $d->email;
             $_SESSION["sname"] = $d->name;
             mysqli_query($con, "insert into login (name,email,id,date) values ('$d->name','$d->email','$d->id',curdate())");
             echo "<script>alert('You are valid user...');</script>";
