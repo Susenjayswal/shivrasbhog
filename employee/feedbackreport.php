@@ -36,7 +36,7 @@ $edate1 = $_REQUEST["edate1"];
             <table border="1" cellspacing="0" align="center" style="border-collapse:collapse; border-spacing:0px;">
                 <tr>
                     <td align="center" rowspan="2"><img src="../assets/img/favicon.png"></td>
-                    <td colspan="3" rowspan="2">
+                    <td colspan="4" rowspan="2">
                         <div align="center" style="font-style:oblique;"><strong>RASBHOG</strong></br> A unit of Shiv
                             Rasbhog LLP</br></div>
                     </td>
@@ -53,6 +53,7 @@ $edate1 = $_REQUEST["edate1"];
                     <td><Strong>Name</strong></td>
                     <td><Strong>Email</strong></td>
                     <td><Strong>Feedback</strong></td>
+                    <td><Strong>Rating</strong></td>
                 </tr>
                 <?php
                 $sr = 0;
@@ -76,6 +77,9 @@ $edate1 = $_REQUEST["edate1"];
                         </td>
                         <td>
                             <?php echo $d->feedback; ?>
+                        </td>
+                        <td>
+                            <?php echo $d->rate." Star"; ?>
                         </td>
                     </tr>
                     <?php

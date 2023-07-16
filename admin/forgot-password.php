@@ -14,7 +14,9 @@
 </head>
 
 <body>
-	
+	<!--[if lt IE 8]>
+		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
 	<div id="preloader" class="preloader">
 		<div class='inner'>
 			<div class='line1'></div>
@@ -31,16 +33,17 @@
 				<div class="col-xl-6 col-lg-7 col-sm-12 col-12 fxt-bg-color">
 					<div class="fxt-content">
 						<div class="fxt-header">
-							<a href="index.php" class="fxt-logo"><img src="img/logo.png" alt="Logo"></a>
+							<a href="../index.php" class="fxt-logo"><img src="img/logo.png" alt="Logo"></a>
 							<p>Recover your password</p>
 						</div>
 						<div class="fxt-form">
-							<form method="POST">
+							<form method="POST" action="action.php">
 								<div class="form-group">
 									<div class="fxt-transformY-50 fxt-transition-delay-1">
 										<input type="email" id="email" class="form-control" name="email"
 											placeholder="Email" required="required">
-									</div>
+											<input type="hidden" id="action" name="action" value="forgot">	
+										</div>
 								</div>
 								<div class="form-group">
 									<div class="fxt-transformY-50 fxt-transition-delay-4">

@@ -33,8 +33,8 @@ if ($_POST["action"] == "employee") {
         $msg = "You are registed and goto forgot password...";
         echo "<script>top.window.location.href='index.php?msg=$msg'</script>";
     } else {
-        $password = md5($password);
-        mysqli_query($con, "insert into employee(name,fname,mobile,email,address,idt,idnum,designation,outnum,outadd,password) values('$name','$fname','$mobile','$email','$address','$idt','$idnum','$designation','$outlet','$out_add','$password')");
+        $pwd = md5($password);
+        mysqli_query($con, "insert into employee(name,fname,mobile,email,address,idt,idnum,designation,outnum,outadd,password,view_password) values('$name','$fname','$mobile','$email','$address','$idt','$idnum','$designation','$outlet','$out_add','$pwd','$password')");
         $msg = "You are registered successfully. proceed to login....";
         echo "<script>top.window.location.href='index.php?msg=$msg'</script>";
     }
@@ -69,13 +69,71 @@ if ($_POST["action"] == "login") {
     }
 }
 
+// Forgot Password 
+if ($_POST["action"] == "forgot") {
+    extract($_POST);
+    $rs = mysqli_query($con, "select *from employee where email='$email' ");
+    if (mysqli_num_rows($rs) > 0) {
+        $d = mysqli_fetch_object($rs);
+        $pwd=$d->view_password;
+        $name=$d ->name;
+        //echo "<script>alert('$pwd'); </script>";
+        include ('../class/class.phpmailer.php');
+        $mail = new PHPMailer;
+        $mail->IsSMTP();
+        $mail->Host = 'shivrasbhog.com';
+        $mail->Port = '587';
+        $mail->SMTPAuth = true;
+        $mail->Username = 'info@shivrasbhog.com';
+        $mail->Password = 'Shivrasbhog@123';
+        $mail->SMTPSecure = '';
+        $mail->From = 'info@shivrasbhog.com';
+        $mail->FromName = 'Shiv Rasbhog';
+        $mail->AddAddress($email);
+        $mail->WordWrap = 50;
+        $mail->IsHTML(true);
+        $mail->Subject = 'Employee Forgot Password Shivrasbhog';
+        $message_body = "'$name'.',Your Password is'.'$pwd'";
+        $mail->Body = $message_body;
+   
+        $mail->Send();
+        $msg = "Proceed to login....";
+        echo "<script>top.window.location.href='index.php?msg=$msg'</script>";
+    }else{
+        echo "<script>alert('You are not a valid user') </script>";
+    }
+    }
+//Update password
 
-
+if ($_POST["action"] == "password") {
+    extract($_POST);
+    $password = md5($password);
+    $rs = mysqli_query($con, "select *from employee where email='$email' and password='$password'");
+    if (mysqli_num_rows($rs) > 0) {     
+        if($password!=md5($opassword)){
+            if ($npassword == $opassword) {
+                $pwd=md5($npassword);
+                mysqli_query($con,"update employee set password='$pwd',view_password='$npassword' where email='$email' and password='$password'");
+                $msg = "Password Changed Succefully.....proceed to login";
+                echo "<script>top.window.location.href='index.php?msg=$msg'</script>";
+            } else {
+            echo "<script>alert('Password Not Matched');</script>";
+            echo "<script>top.window.location.href='changepassword.php';</script>";
+            }
+        }else{
+            echo "<script>alert('Old and New Password should not be same');</script>";
+            echo "<script>top.window.location.href='changepassword.php';</script>";
+        }
+    } else {
+        echo "<script>alert('You are not register or invalid email or passsword');</script>";
+        echo "<script>top.window.location.href='index.php';</script>";
+    }
+}
 // Menu Upload in database
 
 if (isset($_POST["action"]) == "upload") {
 
-    if ($_FILES['file']['name']) {
+    if (@$_FILES['file']['name']) {
         $filename = explode(".", $_FILES['file']['name']);
         echo "loading";
         if ($filename[1] == 'csv') {

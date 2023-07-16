@@ -38,36 +38,43 @@
 					<div class="fxt-content">
 						<div class="fxt-header">
 							<a href="index.php" class="fxt-logo"><img src="img/logo.png" alt="Logo"></a></br>
-							<h3> <strong>Login to Shiv Rasbhog </strong></h3>
+							<h3> <strong>Update Your Password </strong></h3>
 						</div>
 						<div class="fxt-form">
 							<form method="POST" action="action.php">
 								<div class="form-group">
+                                    <label><b>Enter Your Email-Id</b></label>
 									<div class="fxt-transformY-50 fxt-transition-delay-1">
 										<input type="email" id="email" class="form-control" name="email"
 											placeholder="Email" required="required">
-										<input type="hidden" id="action" name="action" value="login">
+										<input type="hidden" id="action" name="action" value="password">
 									</div>
 								</div>
 								<div class="form-group">
-									<div class="fxt-transformY-50 fxt-transition-delay-2">
+                                    <label><b>Enter Old Password</b></label>
+                                    <div class="fxt-transformY-50 fxt-transition-delay-2">
 										<input id="password" type="password" class="form-control" name="password"
 											placeholder="********" required="required">
 										<i toggle="#password" class="fa fa-fw fa-eye toggle-password field-icon"></i>
 									</div>
 								</div>
-								<div class="form-group">
-									<div class="fxt-transformY-50 fxt-transition-delay-3">
-										<div class="fxt-checkbox-area">
-											<div class="checkbox">
-												<input id="checkbox1" type="checkbox">
-												<label for="checkbox1">Keep me logged in</label>
-											</div>
-											<a href="forgot-password.php" class="switcher-text">Forgot
-												Password</a>
-										</div>
+                                <div class="form-group">
+                                    <label><b>Enter New Password</b></label>
+									<div class="fxt-transformY-50 fxt-transition-delay-2">
+										<input id="opassword" type="password" class="form-control" name="opassword"
+											placeholder="********" required="required">
+										<i toggle="#password" class="fa fa-fw fa-eye toggle-password field-icon"></i>
 									</div>
 								</div>
+                                <div class="form-group">
+                                    <label><b>Confirm Password</b></label>
+									<div class="fxt-transformY-50 fxt-transition-delay-2">
+										<input id="npassword" type="password" class="form-control" name="npassword"
+											placeholder="********" required="required">
+										<i toggle="#password" class="fa fa-fw fa-eye toggle-password field-icon"></i>
+									</div>
+								</div>
+								
 								<div class="form-group">
 									<div class="fxt-transformY-50 fxt-transition-delay-4">
 										<button type="submit" name="btnsubmit" class="fxt-btn-fill">Log in</button>
@@ -80,18 +87,7 @@
 								</div>
 							</form>
 						</div>
-						<div class="fxt-footer">
-							<div class="fxt-transformY-50 fxt-transition-delay-9">
-								<p>You want to change your password?</br><a href="changepassword.php"
-										class="switcher-text2 inline-text">Change Password</a></p>
-							</div>
-						</div>
-						<div class="fxt-footer">
-							<div class="fxt-transformY-50 fxt-transition-delay-9">
-								<p>You don't have an account?</br><a href="employee.php"
-										class="switcher-text2 inline-text">Register</a></p>
-							</div>
-						</div>
+						
 					</div>
 				</div>
 			</div>

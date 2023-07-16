@@ -61,6 +61,16 @@
                                             class="form-control lgx-input-form form-control" required="required" />
                                     </div>
                                     <div class="form-group">
+                                        <Select id=rate name=rate class="form-control lgx-input-form form-control" required="required">
+                                            <option>Rating</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </Select>
+                                    </div>
+                                    <div class="form-group">
                                         <button type="submit" name="btnsubmit" class="btn"><span>Submit</span></button>
                                     </div>
                                 </form>
