@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once("function.php");
+include ("function.php");
 if ($_SESSION["email"] == "") {
 	echo "<script>top.window.location.href='index.php';</script>";
 }
@@ -10,7 +10,7 @@ if ($_SESSION["email"] == "") {
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>Rasbhog</title>
+	<title>Shiv Rasbhog</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Favicon -->
@@ -42,7 +42,7 @@ if ($_SESSION["email"] == "") {
 						<div class="fxt-form">
 							<form enctype='multipart/form-data' action='action.php' method='post'>
 
-								<label>Upload Rasbhog's Menu</label>
+								<label>Upload Shiv Rasbhog's Menu</label>
 								<div class="form-group">
 									<div class="fxt-transformY-50 fxt-transition-delay-1">
 										<input type='file' name="file" class="form-control">
@@ -58,6 +58,10 @@ if ($_SESSION["email"] == "") {
 										<input type='submit' name='submit' value='Upload Products' class="fxt-btn-fill">
 									</div>
 								</div>
+								<div class="form-group">
+								    	<button type="submit" class="fxt-btn-fill" <a class="lgx-scroll"
+							href="../admin/logout.php">Logout</a></button>
+								</div>
 						</div>
 					</div>
 				</div>
@@ -66,6 +70,7 @@ if ($_SESSION["email"] == "") {
 		</div>
 
 		</form>
+	
 	</section>
 	<?php include('include/script.php'); ?>
 </body>

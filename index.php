@@ -162,7 +162,7 @@
                             </div>
                             <div class="col-sm-4">
                                 <div class="about-top-single">
-                                    <a href="#"><img src=assets/img/gallery/Rasbhog.gif alt="about-icon" width="200px"
+                                    <a href="#"><img src=assets/img/gallery/rasbhog.gif alt="about-icon" width="200px"
                                             height="200px"></a>
                                     <h3 class="title"><a href="#">SPECIALTY</a></h3>
                                     <h5 style="font-style:oblique;"><strong>Deliciously Irresistible Sweets for Every
@@ -387,7 +387,7 @@
                                 </figcaption>
                             </figure>
                             <div class="menu-info">
-                                <h3 class="title">RASBHOG KESAR PYASAM</h3>
+                                <h3 class="title">RASBHOG KESAR PAYASAM</h3>
                                 <h5 class="subtitle">RASBHOG SPECIALS</h5>
                             </div>
                         </a>
@@ -438,121 +438,8 @@
     </section>
     <!--MENU ITEMS END-->
 
-    </div>
-    </div>
-    </div>
-    <!--//.ROW-->
-    </div>
-    <!-- //.CONTAINER -->
-    </div>
-    <!-- //.INNER -->
-    </div>
-    </section>
-    <!--RESERVATION END-->
+   
 
-
-
-    <!--TESTIMONIALS -->
-    <section>
-        <div id="lgx-testimonial" class="lgx-testimonial">
-            <div class="lgx-inner">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <div class="lgx-heading">
-                                <h2 class="heading-title">What people Say</h2>
-                                <h4 class="heading-subtitle">Latest Updates You Don't Miss Out!</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <!--//.ROW-->
-                    <div class="row">
-                        <div id="lgx-owltestimonial" class="lgx-owltestimonial lgx-owlnews">
-
-                            <div class="item">
-                                <!--Testimonial-single-->
-                                <blockquote class="lgx-testi-single">
-                                    <p><span>This is one of the best Snacks and sweets lover destination in our
-                                            City</span>This cozy restaurant has left the best impressions! I recommend
-                                        to everyone! I would like to come back here again and again.</p>
-                                    <div class="author">
-                                        <!--<img src="assets/img/testimonials/Tsusen.jpg" alt="author">-->
-                                        <h4 class="title"><a href="#"></a>Susen</h4>
-                                        <div class="rate">
-                                            <i class="fa fa-star active"></i>
-                                            <i class="fa fa-star active"></i>
-                                            <i class="fa fa-star active"></i>
-                                            <i class="fa fa-star active"></i>
-                                            <i class="fa fa-star"></i>
-                                        </div>
-                                    </div>
-                                </blockquote> <!--//.Testimonial-single-->
-                            </div> <!--//.Item-->
-                            <div class="item">
-                                <!--Testimonial-single-->
-                                <blockquote class="lgx-testi-single">
-                                    <p><span>It was amazing experience here.</span>The service we received was so
-                                        amazing and we will definitely be back again. They made us feel welcomed and
-                                        gave us an amazing experience..</p>
-                                    <div class="author">
-                                        <!--<img src="assets/img/testimonials/Tekta.jpg" alt="author">-->
-                                        <h4 class="title"><a href="#"></a>Ekta</h4>
-                                        <div class="rate">
-                                            <i class="fa fa-star active"></i>
-                                            <i class="fa fa-star active"></i>
-                                            <i class="fa fa-star active"></i>
-                                            <i class="fa fa-star active"></i>
-                                            <i class="fa fa-star"></i>
-                                        </div>
-                                    </div>
-                                </blockquote> <!--//.Testimonial-single-->
-                            </div> <!--//.Item-->
-                            <div class="item">
-                                <!--Testimonial-single-->
-                                <blockquote class="lgx-testi-single">
-                                    <p><span> Do yourself a favor and visit this lovely restaurant.</span>The service is
-                                        unmatched. The staff truly cares about your experience. The food is absolutely
-                                        amazing – everything we tasted melted in other mouths. </p>
-                                    <div class="author">
-                                        <!--<img src="assets/img/testimonials/abhis.jpg" alt="author">-->
-                                        <h4 class="title"><a href="#"></a>Abhishek</h4>
-                                        <div class="rate">
-                                            <i class="fa fa-star active"></i>
-                                            <i class="fa fa-star active"></i>
-                                            <i class="fa fa-star active"></i>
-                                            <i class="fa fa-star active"></i>
-                                            <i class="fa fa-star"></i>
-                                        </div>
-                                    </div>
-                                </blockquote> <!--//.Testimonial-single-->
-                            </div> <!--//.Item-->
-                            <div class="item">
-                                <!--Testimonial-single-->
-                                <blockquote class="lgx-testi-single">
-                                    <p><span>This place is great! </span>Atmosphere is chill and cool but the staff is
-                                        also really friendly. They know what they’re doing and what they’re talking
-                                        about, and you can tell making the customers happy is their main priority. Food
-                                        is pretty good.</p>
-                                    <div class="author">
-                                        <!--<img src="assets/img/testimonials/Tprachi.jpg" alt="author">-->
-                                        <h4 class="title"><a href="#"></a>Prachi</h4>
-                                        <div class="rate">
-                                            <i class="fa fa-star active"></i>
-                                            <i class="fa fa-star active"></i>
-                                            <i class="fa fa-star active"></i>
-                                            <i class="fa fa-star active"></i>
-                                            <i class="fa fa-star"></i>
-                                        </div>
-                                    </div>
-                                </blockquote> <!--//.Testimonial-single-->
-                            </div> <!--//.Item-->
-                        </div><!--l//#lgx-OWL NEWS-->
-                    </div>
-                </div><!-- //.CONTAINER -->
-            </div><!-- //.INNER -->
-        </div>
-    </section>
-    <!--TESTIMONIALS END-->
 
     </div>
     <?php include('include/footer.php') ?>

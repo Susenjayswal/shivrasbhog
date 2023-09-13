@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once("function.php");
+include ("function.php");
 if ($_SESSION["email"] == "") {
 	echo "<script>top.window.location.href='index.php';</script>";
 }
@@ -11,7 +11,7 @@ if ($_SESSION["email"] == "") {
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>Rasbhog</title>
+	<title>Shiv Rasbhog</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Favicon -->
@@ -40,7 +40,7 @@ if ($_SESSION["email"] == "") {
 						<div class="fxt-header">
 							<a href="../employee/staff.php" class="fxt-logo"><img src="img/logo.png" alt="Logo"></a>
 							<h6><strong>Hi!
-									<?php echo $_SESSION["name"]; ?>
+									<?php echo $_SESSION["sname"]; ?>
 								</strong></h6>
 							<h2>
 								<strong?>Customer Details</strong>

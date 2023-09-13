@@ -1,5 +1,5 @@
 <?php
-require_once("connect.php");
+$con = mysqli_connect("localhost", "shivrasb_ashwani", "ARs@321789004", "shivrasb_rasbhog");
 @session_start();
 
 //Choose product type

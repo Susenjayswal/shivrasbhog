@@ -1,10 +1,10 @@
 <?php
-require_once("connect.php");
+$con = mysqli_connect("localhost", "shivrasb_ashwani", "ARs@321789004", "shivrasb_rasbhog");
 session_start();
 if ($_POST["action"] == "stock") {
     extract($_POST);
     if (@$_POST["btn11"] == "Add") {
-        mysqli_query($con, "insert into stock(name,invono,rate,type,quantity,price,date) values('$name','$invono','$rate','$type','$quantity','$price','$date')");
+        mysqli_query($con, "insert into stock(name,invono,rate,type,quantity,price,date,cdate) values('$name','$invono','$rate','$type','$quantity','$price','$date',curdate())");
         $msg = "Stock Inserted Succefully";
         echo "<script>top.window.location.href='../employee/stock.php?msg=$msg&name=$name&invono=$invono'</script>";
     }
@@ -37,7 +37,7 @@ if ($_POST["action"] == "expenses") {
     extract($_POST);
     mysqli_query($con, "insert into expenses(name,price,date) values('$name','$price','$date')");
     $msg = "Expenses Inserted Succefully";
-    echo "<script>top.window.location.href='../employee/staff.php?msg=$msg&name=$name&price=$price'</script>";
+    echo "<script>top.window.location.href='../employee/expenses.php?msg=$msg&name=$name&price=$price'</script>";
 }
 
 

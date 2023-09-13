@@ -1,5 +1,5 @@
 <?php
-require_once("connect.php");
+$con = mysqli_connect("localhost", "shivrasb_ashwani", "ARs@321789004", "shivrasb_rasbhog");
 session_start();
 
 //Invocie Number
@@ -7,7 +7,7 @@ session_start();
 
 function newinvoiceno()
 {
-    $con = mysqli_connect("localhost", "root", "", "rasbhog");
+    $con = mysqli_connect("localhost", "shivrasb_ashwani", "ARs@321789004", "shivrasb_rasbhog");
 
     $rs = mysqli_query($con, "select *from counter");
     $d = mysqli_fetch_object($rs);
@@ -18,7 +18,7 @@ function newinvoiceno()
 // Update Invoice Number
 function updateinvoiceno($invno)
 {
-    $con = mysqli_connect("localhost", "root", "", "rasbhog");
+    $con = mysqli_connect("localhost", "shivrasb_ashwani", "ARs@321789004", "shivrasb_rasbhog");
     mysqli_query($con, "update counter set invno='$invno'");
 }
 
@@ -33,8 +33,8 @@ if ($_POST["action"] == "employee") {
         $msg = "You are registed and goto forgot password...";
         echo "<script>top.window.location.href='index.php?msg=$msg'</script>";
     } else {
-        $pwd = md5($password);
-        mysqli_query($con, "insert into employee(name,fname,mobile,email,address,idt,idnum,designation,outnum,outadd,password,view_password) values('$name','$fname','$mobile','$email','$address','$idt','$idnum','$designation','$outlet','$out_add','$pwd','$password')");
+        $password1 = md5($password);
+        mysqli_query($con, "insert into employee(name,fname,mobile,email,address,idt,idnum,designation,outnum,outadd,password,view_password) values('$name','$fname','$mobile','$email','$address','$idt','$idnum','$designation','$outlet','$out_add','$password1','$password')");
         $msg = "You are registered successfully. proceed to login....";
         echo "<script>top.window.location.href='index.php?msg=$msg'</script>";
     }
@@ -46,22 +46,21 @@ if ($_POST["action"] == "login") {
     extract($_POST);
     $password = md5($password);
     $rs = mysqli_query($con, "select *from employee where email='$email' and password='$password'");
+   
     if (mysqli_num_rows($rs) > 0) {
         $d = mysqli_fetch_object($rs);
-        
-        
+        $_SESSION["email"] = $d->email;
+       
         if (($d->designation) == "Admin") {
-            $_SESSION["email"] = $d->email;
-            $_SESSION["name"] = $d->name;
+             $_SESSION["name"] = $d->name;
             mysqli_query($con, "insert into login (name,email,id,date) values ('$d->name','$d->email','$d->id',curdate())");
-            echo "<script>alert('You are valid user...');</script>";
-            echo "<script>top.window.location.href='../employee/admin.php';</script>";
+           echo "<script>alert('You are valid user...');</script>";
+           echo "<script>top.window.location.href='../employee/index.php';</script>";
         } else {
-            $_SESSION["semail"] = $d->email;
             $_SESSION["sname"] = $d->name;
             mysqli_query($con, "insert into login (name,email,id,date) values ('$d->name','$d->email','$d->id',curdate())");
-            echo "<script>alert('You are valid user...');</script>";
-            echo "<script>top.window.location.href='../employee/staff.php';</script>";
+           echo "<script>alert('You are valid user...');</script>";
+           echo "<script>top.window.location.href='../employee/staff.php';</script>";
         }
     } else {
         echo "<script>alert('You are not register or invalid password...');</script>";
@@ -92,8 +91,9 @@ if ($_POST["action"] == "forgot") {
         $mail->AddAddress($email);
         $mail->WordWrap = 50;
         $mail->IsHTML(true);
-        $mail->Subject = 'Employee Forgot Password Shivrasbhog';
-        $message_body = "'$name'.',Your Password is'.'$pwd'";
+        $mail->Subject = 'Employee Forgot Password ';
+        $message_body = "$name, <p>Your Password is '$pwd'<b></br>Sincerely,</br>Team Shiv Rasbhog</p> <p>Update Your Password from the following link</br></p><p>http://www.shivrasbhog.com/admin/changepassword.php</a></p>";
+        
         $mail->Body = $message_body;
    
         $mail->Send();
@@ -103,6 +103,7 @@ if ($_POST["action"] == "forgot") {
         echo "<script>alert('You are not a valid user') </script>";
     }
     }
+
 //Update password
 
 if ($_POST["action"] == "password") {
@@ -121,7 +122,7 @@ if ($_POST["action"] == "password") {
             echo "<script>top.window.location.href='changepassword.php';</script>";
             }
         }else{
-            echo "<script>alert('Old and New Password should not be same');</script>";
+            echo "<script>alert('Old and New Password must not be same');</script>";
             echo "<script>top.window.location.href='changepassword.php';</script>";
         }
     } else {
@@ -129,11 +130,12 @@ if ($_POST["action"] == "password") {
         echo "<script>top.window.location.href='index.php';</script>";
     }
 }
+
 // Menu Upload in database
 
 if (isset($_POST["action"]) == "upload") {
 
-    if (@$_FILES['file']['name']) {
+    if ($_FILES['file']['name']) {
         $filename = explode(".", $_FILES['file']['name']);
         echo "loading";
         if ($filename[1] == 'csv') {

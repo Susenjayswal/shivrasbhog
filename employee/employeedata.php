@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once('../admin/connect.php');
+$con = mysqli_connect("localhost", "shivrasb_ashwani", "ARs@321789004", "shivrasb_rasbhog");
 if ($_SESSION["email"] == "") {
 	echo "<script>top.window.location.href='../admin/index.php';</script>";
 }
@@ -11,7 +11,7 @@ if ($_SESSION["email"] == "") {
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>Rasbhog</title>
+	<title>Shiv Rasbhog</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Favicon -->
@@ -29,9 +29,6 @@ if ($_SESSION["email"] == "") {
 </head>
 
 <body>
-	<!--[if lt IE 8]>
-		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-	<![endif]-->
 	<div id="preloader" class="preloader">
 		<div class='inner'>
 			<div class='line1'></div>
@@ -48,8 +45,8 @@ if ($_SESSION["email"] == "") {
 				<div class="col-xl-6 col-lg-7 col-sm-12 col-12 fxt-bg-color">
 					<div class="fxt-content">
 						<div class="fxt-header">
-							<a href="admin.php" class="fxt-logo"><img src="../admin/img/logo.png" alt="Logo"></a>
-							<h2>Rasbhog</h2>
+							<a href="index.php" class="fxt-logo"><img src="../admin/img/logo.png" alt="Logo"></a>
+							<h2>Shiv Rasbhog</h2>
 							<h6><strong>Hi!
 									<?php echo $_SESSION["name"]; ?>
 								</strong></h6>
@@ -63,7 +60,7 @@ if ($_SESSION["email"] == "") {
 									<h2 align="center">Employee Details</h2>
 									<form class="fxt-form" method="post">
 										<div class="form-group">
-											<label> Employee Name &nbsp;&nbsp;&nbsp;&nbsp;</label>
+											<label> Employee Name</label>
 											<input type="name" id="empname" name="empname"
 												placeholder="Enter Employee Name" class="form-control">
 										</div>

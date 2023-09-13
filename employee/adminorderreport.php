@@ -1,5 +1,5 @@
 <?php
-require_once("../admin/connect.php");
+$con = mysqli_connect("localhost", "shivrasb_ashwani", "ARs@321789004", "shivrasb_rasbhog");
 session_start();
 if ($_SESSION["email"] == "") {
   echo "<script>top.window.location.href='../admin/index.php';</script>";
@@ -13,7 +13,7 @@ $edate = $_REQUEST["edate"];
 
 <head>
   <link rel="stylesheet" href="../admin/css/font.css">
-  <title>Rasbhog</title>
+  <title>Shiv Rasbhog</title>
   <link rel="shortcut icon" type="image/x-icon" href="../admin/img/favicon.png">
   <script>
     function printDiv() {
@@ -31,15 +31,14 @@ $edate = $_REQUEST["edate"];
     <form action="../admin/actionorder.php" method="post" class="form-group">
       <div class="col-50" align="center">
 
-        <button type="button" id="print" onclick="printDiv();">Print Bill</button>
-        <button type="button" id="cancel" onclick="window.open('admin.php','_parent');">Done</button>
+        <button type="button" id="print" onclick="printDiv();">Print Report</button>
+        <button type="button" id="cancel" onclick="window.open('index.php','_parent');">Done</button>
       </div>
       <table border="1" cellspacing="0" align="center" style="border-collapse:collapse; border-spacing:0px;">
         <tr>
-          <td align="center" rowspan="2"><img src="../customer/assets/img/favicon.png"></td>
+          <td align="center" rowspan="2"><img src="../assets/img/favicon.png"></td>
           <td colspan="4" rowspan="2">
-            <div align="center" style="font-style:oblique;"><strong>RASBHOG</strong></br> A unit of Shiv
-              Rasbhog LLP</br></div>
+            <div align="center" style="font-style:oblique;"><strong>SHIV RASBHOG</strong></div>
           </td>
           <td colspan="2">
             <div><strong>Lic No. ABZ-4264 </strong></div>

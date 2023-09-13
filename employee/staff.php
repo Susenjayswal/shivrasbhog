@@ -1,7 +1,7 @@
 <?php
 session_start();
-require_once('../admin/connect.php');
-if ($_SESSION["semail"] == "") {
+$con = mysqli_connect("localhost", "shivrasb_ashwani", "ARs@321789004", "shivrasb_rasbhog");
+if ($_SESSION["email"] == "") {
 	echo "<script>top.window.location.href='../admin/index.php';</script>";
 }
 ?>
@@ -13,7 +13,7 @@ if ($_SESSION["semail"] == "") {
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>Rasbhog</title>
+	<title>Shiv Rasbhog</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Favicon -->
@@ -31,7 +31,6 @@ if ($_SESSION["semail"] == "") {
 </head>
 
 <body>
-
 	<div id="preloader" class="preloader">
 		<div class='inner'>
 			<div class='line1'></div>
@@ -49,7 +48,7 @@ if ($_SESSION["semail"] == "") {
 					<div class="fxt-content">
 						<div class="fxt-header">
 							<a href="staff.php" class="fxt-logo"><img src="../admin/img/logo.png" alt="Logo"></a>
-							<h2>Rasbhog</h2>
+							<h2>Shiv Rasbhog</h2>
 							<h6><strong>Hi!
 									<?php echo $_SESSION["sname"]; ?>
 								</strong></h6>
@@ -59,19 +58,18 @@ if ($_SESSION["semail"] == "") {
 								<div class="navrow">
 									<table cellspacing="10px">
 										<button type="submit" class="fxt-btn-fill"><a class="lgx-scroll"
-												href="payment.php">Payment Report</a></button>
+												href="expenses.php">Expenses Entry</a></button>
 										<button type="submit" class="fxt-btn-fill"><a class="lgx-scroll"
 												href="orderdate.php">Order Report</a></button>
 										<button type="submit" class="fxt-btn-fill"><a class="lgx-scroll"
-												href="../admin/uploadmenu.php">Upload Menu</a></button>
+												href="payment.php">Payment Report</a></button>
+									    <button type="submit" class="fxt-btn-fill"><a class="lgx-scroll"
+										href="stockinvoice.php">Stock Entry</a></button>
 										<button type="submit" class="fxt-btn-fill"><a class="lgx-scroll"
-												href="../admin/customer.php">Take Order</a></button>
+										href="../admin/customer.php">Take Order</a></button>
 										<button type="submit" class="fxt-btn-fill"><a class="lgx-scroll"
-												href="stockinvoice.php">Stock Entry</a></button>
-										<button type="submit" class="fxt-btn-fill"><a class="lgx-scroll"
-												href="expenses.php">Expenses Entry</a></button>
-
-									</table>
+										href="../admin/uploadmenustaff.php">Upload Menu</a></button>
+										</table>
 								</div>
 								<button type="submit" class="fxt-btn-fill"><a class="lgx-scroll"
 										href="../admin/logout.php">Logout</a></button>

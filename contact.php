@@ -1,5 +1,5 @@
 <?php
-require_once("admin/connect.php");
+ $con = mysqli_connect("localhost", "shivrasb_ashwani", "ARs@321789004", "shivrasb_rasbhog");
 ?>
 <!doctype html>
 <html class="no-js" lang="en">
@@ -115,13 +115,14 @@ require_once("admin/connect.php");
                     <strong>
                         Feel free to get in touch with us if you want to know more about us, and fill out the form below
                         if you want to meet us.<br>Mobile No. :- +91 7979084161<br>Email Id &emsp;&nbsp;:-
-                        shivrashbhog23@gmail.com
+                        info@shivrasbhog.com
                     </strong>
                 </td>
             </tr>
         </table>
         <div class="lgx-footer-single">
             <h1 align="center"><strong>Contact Us </strong></h1>
+            <h3 align="center"><strong>For further enquiry or If you want to became a partner then fill the form</strong></h3>
             <div class="lgx-subscriber-area">
                 <div class="lgx-subscriber">
                     <form name="frm" method="POST" action="actioncontact.php">
@@ -138,7 +139,8 @@ require_once("admin/connect.php");
                         </div>
                         <div class="form-group">
                             <label> Enter Your Mobile No. </label>
-                            <input type="text" id="mobile" name="mobile" placeholder="Mobile"
+                            <input type="tel" id="mobile" name="mobile" 
+                            pattern="[6-9]{1}[0-9]{9}" placeholder="Mobile Number"
                                 class="form-control lgx-input-form form-control" required="required" />
                         </div>
                         <div class="form-group">
@@ -155,6 +157,29 @@ require_once("admin/connect.php");
                             <label> Enter Date of Meeting </label>
                             <input type="date" id="date" name="date" placeholder="Date"
                                 class="form-control lgx-input-form form-control" required="required" />
+                        </div>
+                        <div class="form-group">
+                        <label>Choose a time for your meeting:</label>
+                        <select id="time" name="time" class="form-control lgx-input-form form-control" required="required">
+                            <option>hh:mm</option>
+                            <option>10:00 AM</option>
+                            <option>10:30 AM</option>
+                            <option>11:00 AM</option>
+                            <option>11:30 AM</option>
+                            <option>12:00 PM</option>
+                            <option>12:30 PM</option>
+                            <option>01:00 PM</option>
+                            <option>01:30 PM</option>
+                            <option>02:00 PM</option>
+                            <option>02:30 PM</option>
+                            <option>03:00 PM</option>
+                            <option>03:30 PM</option>
+                            <option>04:00 PM</option>
+                            <option>04:30 PM</option>
+                            <option>05:00 PM</option>
+                            <option>05:30 PM</option>
+                            <option>06:00 PM</option>
+                       </select>
                         </div>
                         <div class="form-group">
                             <button type="submit" name="btnsubmit" class="btn"><span>Submit</span></button>
@@ -174,6 +199,21 @@ require_once("admin/connect.php");
             }, 1000)
         });
     </script>
+    <script>
+	var today = new Date();
+	var dd = today.getDate();
+	var mm = today.getMonth() + 1; //January is 0!
+	var yyyy = today.getFullYear();
+	if (dd < 10) {
+	dd = '0' + dd;
+	}
+	if (mm < 10) {
+	mm = '0' + mm;
+	} 
+		
+	today = yyyy + '-' + mm + '-' + dd;
+	document.getElementById("date").setAttribute("min", today);
+</script>
 </body>
 
 </html>

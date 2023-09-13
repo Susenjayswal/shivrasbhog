@@ -1,5 +1,5 @@
 <?php
-require_once("connect.php");
+$con = mysqli_connect("localhost", "shivrasb_ashwani", "ARs@321789004", "shivrasb_rasbhog");
 require_once("function.php");
 session_start();
 
@@ -52,6 +52,7 @@ if (@$_POST["action"] == "save_invoice") {
     $totalamount = $d->total_price;
     $gst = ($totalamount * 5) / 100;
     $netamount = $totalamount + $gst;
+    $netamount = round($netamount);
     $employee = ("Guest Order");
     mysqli_query($con, "insert into payment(name,mobile,invno,empname,paytype,totalamt,netamt,saledate) values('$name','$mobile','$invno','$employee','$paytype','$totalamount','$netamount',curdate())");
     updateinvoiceno($invno);

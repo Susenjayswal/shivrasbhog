@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once('../admin/connect.php');
+$con = mysqli_connect("localhost", "shivrasb_ashwani", "ARs@321789004", "shivrasb_rasbhog");
 if ($_SESSION["email"] == "") {
 	echo "<script>top.window.location.href='../admin/index.php';</script>";
 }
@@ -13,7 +13,7 @@ if ($_SESSION["email"] == "") {
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>Rasbhog</title>
+	<title>Shiv Rasbhog</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Favicon -->
@@ -48,8 +48,8 @@ if ($_SESSION["email"] == "") {
 				<div class="col-xl-6 col-lg-7 col-sm-12 col-12 fxt-bg-color">
 					<div class="fxt-content">
 						<div class="fxt-header">
-							<a href="admin.php" class="fxt-logo"><img src="../admin/img/logo.png" alt="Logo"></a>
-							<h2>Rasbhog</h2>
+							<a href="index.php" class="fxt-logo"><img src="../admin/img/logo.png" alt="Logo"></a>
+							<h2>Shiv Rasbhog</h2>
 							<h6><strong>Hi!
 									<?php echo $_SESSION["name"]; ?>
 								</strong></h6>
@@ -60,13 +60,13 @@ if ($_SESSION["email"] == "") {
 								<h2 align="center">Payment Report </h2>
 								<form class="fxt-form" method="post" action="../admin/actionorder.php">
 									<div class="form-group">
-										<label> Enter Start Date &nbsp;&nbsp;&nbsp;&nbsp;</label>
-										<input type="date" id="stdate" name="stdate" placeholder="Enter Start Date"
+										<label> Enter Start Date </label>
+										<input type="date" id="stdate" name="stdate" min="2023-06-15" placeholder="Enter Start Date"
 											class="form-control">
 									</div>
 									<div class="form-group">
-										<label> Enter End Date &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-										<input type="date" id="endate" name="endate" placeholder="Enter End Date"
+										<label> Enter End Date</label>
+										<input type="date" id="endate" min="2023-06-15" name="endate" placeholder="Enter End Date"
 											class="form-control">
 									</div>
 									<div class="form-group">
@@ -106,6 +106,36 @@ if ($_SESSION["email"] == "") {
 
 		});
 	</script>
+	<script>
+	var today = new Date();
+	var dd = today.getDate();
+	var mm = today.getMonth() + 1; //January is 0!
+	var yyyy = today.getFullYear();
+	if (dd < 10) {
+	dd = '0' + dd;
+	}
+	if (mm < 10) {
+	mm = '0' + mm;
+	} 
+		
+	today = yyyy + '-' + mm + '-' + dd;
+	document.getElementById("endate").setAttribute("max", today);
+</script>
+<script>
+	var today = new Date();
+	var dd = today.getDate();
+	var mm = today.getMonth() + 1; //January is 0!
+	var yyyy = today.getFullYear();
+	if (dd < 10) {
+	dd = '0' + dd;
+	}
+	if (mm < 10) {
+	mm = '0' + mm;
+	} 
+		
+	today = yyyy + '-' + mm + '-' + dd;
+	document.getElementById("stdate").setAttribute("max", today);
+</script>
 </body>
 
 </html>

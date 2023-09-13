@@ -13,7 +13,7 @@ if ($_SESSION["email"] == "") {
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Rasbhog</title>
+    <title>Shiv Rasbhog</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon -->
@@ -31,9 +31,7 @@ if ($_SESSION["email"] == "") {
 </head>
 
 <body>
-    <!--[if lt IE 8]>
-        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+   
     <div id="preloader" class="preloader">
         <div class='inner'>
             <div class='line1'></div>
@@ -50,8 +48,8 @@ if ($_SESSION["email"] == "") {
                 <div class="col-xl-6 col-lg-7 col-sm-12 col-12 fxt-bg-color">
                     <div class="fxt-content">
                         <div class="fxt-header">
-                            <a href="admin.php" class="fxt-logo"><img src="../admin/img/logo.png" alt="Logo"></a>
-                            <h2>Rasbhog</h2>
+                            <a href="index.php" class="fxt-logo"><img src="../admin/img/logo.png" alt="Logo"></a>
+                            <h2>Shiv Rasbhog</h2>
                             <h6><strong>Hi!
                                     <?php echo $_SESSION["name"]; ?>
                                 </strong></h6>
@@ -59,16 +57,16 @@ if ($_SESSION["email"] == "") {
                         <div class="fxt-form">
 
                             <div class=payment>
-                                <h2 align="center">Contact Form Report </h2>
+                                <h2 align="center">Customer's Feedback Report </h2>
                                 <form class="fxt-form" method="post" action="../admin/actionorder.php">
                                     <div class="form-group">
-                                        <label> Enter Start Date &nbsp;&nbsp;&nbsp;&nbsp;</label>
-                                        <input type="date" id="stardate" name="stardate" placeholder="Enter Start Date"
+                                        <label> Enter Start Date</label>
+                                        <input type="date" id="stardate" name="stardate" placeholder="Enter Start Date" min="2023-06-15"
                                             class="form-control">
                                     </div>
                                     <div class="form-group">
-                                        <label> Enter End Date &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                                        <input type="date" id="edate1" name="edate1" placeholder="Enter End Date"
+                                        <label> Enter End Date </label>
+                                        <input type="date" id="edate1" name="edate1" min="2023-06-15" placeholder="Enter End Date"
                                             class="form-control">
                                     </div>
                                     <div class="form-group">
@@ -100,7 +98,37 @@ if ($_SESSION["email"] == "") {
     <script src="../admin/js/validator.min.js"></script>
     <!-- Custom Js -->
     <script src="../admin/js/main.js"></script>
-    <script>
+   <script>
+	var today = new Date();
+	var dd = today.getDate();
+	var mm = today.getMonth() + 1; //January is 0!
+	var yyyy = today.getFullYear();
+	if (dd < 10) {
+	dd = '0' + dd;
+	}
+	if (mm < 10) {
+	mm = '0' + mm;
+	} 
+		
+	today = yyyy + '-' + mm + '-' + dd;
+	document.getElementById("edate1").setAttribute("max", today);
+</script> 
+<script>
+	var today = new Date();
+	var dd = today.getDate();
+	var mm = today.getMonth() + 1; //January is 0!
+	var yyyy = today.getFullYear();
+	if (dd < 10) {
+	dd = '0' + dd;
+	}
+	if (mm < 10) {
+	mm = '0' + mm;
+	} 
+		
+	today = yyyy + '-' + mm + '-' + dd;
+	document.getElementById("stardate").setAttribute("max", today);
+</script>
+<script>
         $("#btnsubmit7").on('click', function () {
             let stardate = $("#stardate").val();
             let edate1 = $("#edate1").val();

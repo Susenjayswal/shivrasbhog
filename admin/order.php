@@ -3,7 +3,7 @@ session_start();
 if ($_SESSION["email"] == "") {
 	echo "<script>top.window.location.href='index.php';</script>";
 }
-include("connect.php");
+$con = mysqli_connect("localhost", "shivrasb_ashwani", "ARs@321789004", "shivrasb_rasbhog");
 $cname = $_REQUEST["name"];
 $mobile = $_REQUEST["mobile"];
 $invoiceno = $_REQUEST["invno"];
@@ -14,7 +14,7 @@ $invoiceno = $_REQUEST["invno"];
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>Rasbhog</title>
+	<title>Shiv Rasbhog</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Favicon -->
@@ -43,7 +43,7 @@ $invoiceno = $_REQUEST["invno"];
 						<div class="fxt-header">
 							<a href="../employee/staff.php" class="fxt-logo"><img src="img/logo.png" alt="Logo"></a>
 							<h6><strong> Hi!
-									<?php echo $_SESSION["name"]; ?>
+									<?php echo $_SESSION["sname"]; ?>
 								</strong></h6>
 							<h2>
 								<strong?>Customer Order</strong>
@@ -121,8 +121,7 @@ $invoiceno = $_REQUEST["invno"];
 								</div>
 						</div>
 						</form>
-						<button type="submit" class="fxt-btn-fill" <a class="lgx-scroll"
-							href="../admin/logout.php">Logout</a></button>
+						<button type="submit" class="fxt-btn-fill"><a class="lgx-scroll" href="logout.php">Logout</a></button>
 
 
 						<script>

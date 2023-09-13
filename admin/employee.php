@@ -6,7 +6,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>Rasbhog</title>
+	<title>Shiv Rasbhog</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Favicon -->
@@ -41,8 +41,8 @@
 				<div class="col-xl-6 col-lg-7 col-sm-12 col-12 fxt-bg-color">
 					<div class="fxt-content">
 						<div class="fxt-header">
-							<a href="login.html" class="fxt-logo"><img src="img/logo.png" alt="Logo"></a>
-							<p>Register for create an Employee account</p>
+							<a href="../employee/admin.php" class="fxt-logo"><img src="img/logo.png" alt="Logo"></a>
+							<h3><strong>Register an Employee</strong></h3>
 						</div>
 						<div class="fxt-form">
 							<form method="POST" action="action.php">

@@ -1,5 +1,5 @@
 <?php
-require_once("connect.php");
+$con = mysqli_connect("localhost", "shivrasb_ashwani", "ARs@321789004", "shivrasb_rasbhog");
 session_start();
 if($_SESSION["email"] == "")
 {
@@ -71,7 +71,7 @@ $employee=$_SESSION["name"];
                             <div class="row align-items-center justify-content-between">
                                 <div class="col-auto">
                                     
-                                        <a href="staff.php"><img src="../customer/assets/img/logo.jpg" alt="Shiv Rasbhog"></a>
+                                        <a href="staff.php"><img src="../assets/img/logo.jpg" alt="Shiv Rasbhog"></a>
                                                                 </div>
                                 <div class="col-auto">
                                     <h1 class="big-title">Invoice</h1>
